@@ -35,9 +35,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  header: {
-    fontSize: 24,
-  },
 });
 
 AppRegistry.registerComponent('ReactFood', () => ReactFood);
