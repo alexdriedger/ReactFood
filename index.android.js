@@ -7,6 +7,8 @@ import {
   SectionList,
 } from 'react-native';
 
+import EventList from './app/Components/EventList/EventList';
+
 const dataSource = [
     { data: [ { name: 'john' }, { name: 'steve'} ], key: 'pizza' },
     { data: [ { name: 'elaine' }, { name: 'josh' }, { name: 'brit' } ], key: 'salad' }
@@ -17,25 +19,10 @@ class ReactFood extends Component {
     super(props, context);
   }
 
-  renderItem = (item) => {
-    return (
-      <Text sytle={styles.items}>{item.item.name}</Text>
-    )
-  }
-  renderHeader = (headerItem) => {
-    return (
-      <Text style={styles.header}>{headerItem.section.key}</Text>
-    )
-  }
   render() {
     return (
       <View style={styles.container}>
-        <SectionList
-          renderItem={this.renderItem}
-          renderSectionHeader={this.renderHeader}
-          sections={dataSource}
-          keyExtractor={(item )=> item.name}
-        />
+        <EventList />
       </View>
     );
   }
