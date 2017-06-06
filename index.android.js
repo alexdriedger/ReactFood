@@ -30,16 +30,12 @@ class ReactFood extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>This is the placeholder text</Text>
-        {/* <SectionList
+        <SectionList
           renderItem={this.renderItem}
           renderSectionHeader={this.renderHeader}
           sections={dataSource}
           keyExtractor={(item )=> item.name}
-        /> */}
-        <Text>This is middle text</Text>
-        <Text style={styles.items}>{this.testData}</Text>
-        <Text style={styles.items}>This is below the data</Text>
+        />
       </View>
     );
   }
@@ -55,10 +51,6 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 24,
   },
-  items: {
-    fontSize: 16,
-  },
-
 });
 
 AppRegistry.registerComponent('ReactFood', () => ReactFood);
