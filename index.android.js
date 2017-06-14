@@ -9,11 +9,6 @@ import {
 
 import EventList from './app/Components/EventList/EventList';
 
-const dataSource = [
-    { data: [ { name: 'john' }, { name: 'steve'} ], key: 'pizza' },
-    { data: [ { name: 'elaine' }, { name: 'josh' }, { name: 'brit' } ], key: 'salad' }
-]
-
 class ReactFood extends Component {
   constructor(props, context) {
     super(props, context);
@@ -31,9 +26,6 @@ class ReactFood extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: 'center',
-    // alignItems: 'center',
-    backgroundColor: 'violet',
   },
 });
 

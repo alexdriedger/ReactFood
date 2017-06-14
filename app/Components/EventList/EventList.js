@@ -11,26 +11,71 @@ import EventRow from '../EventRow/EventRow';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'purple',
     alignSelf: 'stretch',
   },
   headerContainer: {
     alignItems: 'center',
+    padding: 15,
   },
   headerText: {
-    fontSize: 24,
+    fontSize: 34,
   },
   items: {
-    backgroundColor: 'blue',
     flex: 1,
   },
 });
 
-const dataSource = [
-    { data: [ { name: 'john' }, { name: 'steve'} ], key: 'Squash' },
-    { data: [ { name: 'elaine' }, { name: 'josh' }, { name: 'brit' } ], key: 'Pumpkin' },
-    { data: [ { name: 'steeeeeeve' }, { name: 'Broo' }, { name: 'YEEEE' } ], key: 'Leaves' }
-]
+const dataSource = require('../../mockData/months_jan_to_april_2016.json');
+
+// const dataSource = [
+//     {
+//       data: [
+//         {
+//           name: 'john',
+//           location: 'somewhere',
+//         },
+//         {
+//           name: 'steve',
+//           location: 'somewhere else',
+//         },
+//       ],
+//       key: 'Squash',
+//     },
+//     {
+//       data: [
+//         {
+//           name: 'elaine',
+//           location: 'UBC',
+//         },
+//         {
+//           name: 'josh',
+//           location: 'SFU',
+//         },
+//         {
+//           name: 'brit',
+//           location: 'UNBC',
+//         },
+//       ],
+//       key: 'Pumpkin',
+//     },
+//     {
+//       data: [
+//         {
+//           name: 'steeeeeeve',
+//           location: 'Menno',
+//         },
+//         {
+//           name: 'Broo',
+//           location: 'The Mansion'
+//         },
+//         {
+//           name: 'YEEEE',
+//           location: 'The Manor',
+//         },
+//       ],
+//       key: 'Leaves',
+//     },
+// ];
 
 class EventList extends Component {
   renderItem = (item) => {
@@ -38,6 +83,7 @@ class EventList extends Component {
       <View style={styles.items}>
         <EventRow
           eventName={item.item.name}
+          eventLocation={item.item.start_time}
           eventImage={require('../../assets/react-placeholder.png')}
         />
       </View>
@@ -51,6 +97,8 @@ class EventList extends Component {
     )
   }
   render() {
+    var json = require('../../mockData/month_1.json');
+    console.log(json);
     return (
       <View style={styles.container}>
         <SectionList
