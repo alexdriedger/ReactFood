@@ -27,56 +27,6 @@ const styles = StyleSheet.create({
 
 const dataSource = require('../../mockData/months_jan_to_april_2016.json');
 
-// const dataSource = [
-//     {
-//       data: [
-//         {
-//           name: 'john',
-//           location: 'somewhere',
-//         },
-//         {
-//           name: 'steve',
-//           location: 'somewhere else',
-//         },
-//       ],
-//       key: 'Squash',
-//     },
-//     {
-//       data: [
-//         {
-//           name: 'elaine',
-//           location: 'UBC',
-//         },
-//         {
-//           name: 'josh',
-//           location: 'SFU',
-//         },
-//         {
-//           name: 'brit',
-//           location: 'UNBC',
-//         },
-//       ],
-//       key: 'Pumpkin',
-//     },
-//     {
-//       data: [
-//         {
-//           name: 'steeeeeeve',
-//           location: 'Menno',
-//         },
-//         {
-//           name: 'Broo',
-//           location: 'The Mansion'
-//         },
-//         {
-//           name: 'YEEEE',
-//           location: 'The Manor',
-//         },
-//       ],
-//       key: 'Leaves',
-//     },
-// ];
-
 class EventList extends Component {
   renderItem = (item) => {
     return (
