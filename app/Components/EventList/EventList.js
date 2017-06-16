@@ -4,6 +4,8 @@ import {
   View,
   Text,
   StyleSheet,
+  TouchableHighlight,
+  Button,
 } from 'react-native';
 
 import EventRow from '../EventRow/EventRow';
@@ -30,8 +32,9 @@ const dataSource = require('../../mockData/months_jan_to_april_2016.json');
 class EventList extends Component {
   renderItem = (item) => {
     return (
-      <View style={styles.items}>
+      <View style={styles.items} >
         <EventRow
+          onPress={() => this.props.navigation.navigate('EventDetail', {...item})}
           eventName={item.item.name}
           eventLocation={item.item.start_time}
           eventImage={require('../../assets/react-placeholder.png')}

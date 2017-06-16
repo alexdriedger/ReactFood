@@ -16,7 +16,8 @@ class AllEvents extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <EventList />
+        {/* Passing navigation like this is probably terrible practice */}
+        <EventList navigation={this.props.navigation}/>
       </View>
     );
   }

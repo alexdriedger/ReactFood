@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
   Image,
+  TouchableHighlight,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -47,23 +48,27 @@ const styles = StyleSheet.create({
 class EventRow extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Image
-          style={styles.image}
-          source={this.props.eventImage}
-        />
-        <View style={styles.infoContainer}>
-          <Text style={styles.eventName}>{this.props.eventName}</Text>
-          <Text style={styles.eventTime}>Time</Text>
-          <Text style={styles.eventLocation}>{this.props.eventLocation}</Text>
-        </View>
-        <View style={styles.starContainer}>
+      <TouchableHighlight
+        onPress={this.props.onPress}
+      >
+        <View style={styles.container}>
           <Image
-            style={styles.star}
-            source={require('../../assets/ic_star_border_black_24dp.png')}
+            style={styles.image}
+            source={this.props.eventImage}
           />
+          <View style={styles.infoContainer}>
+            <Text style={styles.eventName}>{this.props.eventName}</Text>
+            <Text style={styles.eventTime}>Time</Text>
+            <Text style={styles.eventLocation}>{this.props.eventLocation}</Text>
+          </View>
+          <View style={styles.starContainer}>
+            <Image
+              style={styles.star}
+              source={require('../../assets/ic_star_border_black_24dp.png')}
+            />
+          </View>
         </View>
-      </View>
+      </TouchableHighlight>
     )
   }
 }
