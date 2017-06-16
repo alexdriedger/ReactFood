@@ -7,8 +7,14 @@ import FavEvents from '../screens/FavEvents';
 export const EventsTabs = TabNavigator({
   AllEvents:  {
     screen: AllEvents,
+    navigationOptions: {
+      tabBarLabel: 'Upcoming Food',
+    },
   },
   FavEvents: {
     screen: FavEvents,
+    navigationOptions: {
+        tabBarLabel: 'My Food',
+    },
   },
 });
