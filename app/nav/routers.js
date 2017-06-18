@@ -5,24 +5,9 @@ import AllEvents from '../screens/AllEvents';
 import FavEvents from '../screens/FavEvents';
 import EventDetail from '../screens/EventDetail';
 
-export const AllEventsStack = StackNavigator({
-  AllEvents: {
-    screen: AllEvents,
-    navigationOptions: {
-      title: 'UBC Feed Me',
-    },
-  },
-  EventDetail: {
-    screen: EventDetail,
-    navigationOptions: {
-      title: 'Event Detail Title',
-    },
-  },
-});
-
 export const EventsTabs = TabNavigator({
   AllEvents:  {
-    screen: AllEventsStack,
+    screen: AllEvents,
     navigationOptions: {
       tabBarLabel: 'Upcoming Food',
     },
@@ -31,6 +16,21 @@ export const EventsTabs = TabNavigator({
     screen: FavEvents,
     navigationOptions: {
         tabBarLabel: 'My Food',
+    },
+  },
+});
+
+export const RootStack = StackNavigator({
+  RootScreen: {
+    screen: EventsTabs,
+    navigationOptions: {
+      title: 'UBC Feed Me',
+    },
+  },
+  EventDetail: {
+    screen: EventDetail,
+    navigationOptions: {
+      title: 'Event Detail Title',
     },
   },
 });
