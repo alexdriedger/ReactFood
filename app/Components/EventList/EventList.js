@@ -6,6 +6,7 @@ import {
   StyleSheet,
   TouchableHighlight,
   Button,
+  FlatList,
 } from 'react-native';
 
 import EventRow from '../EventRow/EventRow';
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const dataSource = require('../../mockData/months_jan_to_april_2016.json');
+const data = require('../../mockData/month_1.json');
 
 class EventList extends Component {
   renderItem = (item) => {
@@ -37,28 +38,18 @@ class EventList extends Component {
           onPress={() => this.props.navigation.navigate('EventDetail', {...item})}
           eventName={item.item.name}
           eventLocation={item.item.start_time}
-          eventImage={require('../../assets/react-placeholder.png')}
+          eventImage={{uri:item.item.small_pic_url}}
         />
       </View>
     )
   }
-  renderHeader = (headerItem) => {
-    return (
-      <View style={styles.headerContainer}>
-        <Text style={styles.headerText}>{headerItem.section.key}</Text>
-      </View>
-    )
-  }
   render() {
-    var json = require('../../mockData/month_1.json');
-    console.log(json);
     return (
       <View style={styles.container}>
-        <SectionList
+        <FlatList
+          data={data}
           renderItem={this.renderItem}
-          renderSectionHeader={this.renderHeader}
-          sections={dataSource}
-          keyExtractor={(item )=> item.name}
+          keyExtractor={(item) => item.id}
         />
       </View>
     );
