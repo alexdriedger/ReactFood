@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   dateContainer: {
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     paddingTop: 12,
     paddingLeft: 8,
     paddingBottom: 16,
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     fontWeight: '100',
   },
   dateText: {
-    fontSize: 32,
+    fontSize: 26,
     textAlign: 'center',
     color: 'black',
     fontWeight: '100',
