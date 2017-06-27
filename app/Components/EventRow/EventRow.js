@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
   monthText: {
     textAlign: 'center',
-    color: 'mediumvioletred',
+    color: 'orangered',
   },
   textContainer: {
     flex: 7,
