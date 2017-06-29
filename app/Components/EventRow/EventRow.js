@@ -6,6 +6,7 @@ import {
   Image,
   TouchableHighlight,
 } from 'react-native';
+import moment from 'moment';
 
 const styles = StyleSheet.create({
   container: {
@@ -63,6 +64,7 @@ const styles = StyleSheet.create({
 
 class EventRow extends Component {
   render() {
+    const { event } = this.props;
     return (
       <TouchableHighlight
         onPress={this.props.onPress}
@@ -71,31 +73,33 @@ class EventRow extends Component {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={this.props.eventImage}
+            source={{uri: event.cover.source}}
           />
           <View style={styles.infoContainer}>
             <View style={styles.dateContainer}>
               {/*  TODO : USE ACTUAL DATE*/}
               <Text
                 style={styles.monthText}
-              >Jan</Text>
+              >{moment(event.start_time).format('MMM')}</Text>
               {/*  TODO : USE ACTUAL DATE*/}
               <Text
-                style={styles.dateText}>
-              25</Text>
+                style={styles.dateText}
+              >{moment(event.start_time).format('DD')}</Text>
             </View>
             <View style={styles.textContainer} >
               <Text
                 style={styles.eventName}
                 numberOfLines={1}
                 ellipsizeMode={'tail'}
-              >{this.props.eventName}</Text>
+              >{event.name}</Text>
               <Text
                 style={styles.eventTime}
-              >Time</Text>
+              >{moment(event.start_time).calendar()}</Text>
               <Text
                 style={styles.eventLocation}
-              >{this.props.eventLocation}</Text>
+                numberOfLines={1}
+                ellipsizeMode={'tail'}
+              >{event.place.name}</Text>
             </View>
             <View style={styles.starContainer}>
               <Image

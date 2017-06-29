@@ -43,12 +43,10 @@ class EventList extends Component {
   renderItem = (item) => {
     return (
       <View style={styles.items} >
-        {/* TODO : Pass item instead of prop for each value */}
+        {/* TODO : Pass navigation better */}
         <EventRow
           onPress={() => this.props.navigation.navigate('EventDetail', {...item})}
-          eventName={item.item.name}
-          eventLocation={item.item.start_time}
-          eventImage={{uri:item.item.cover.source}}
+          event={item.item}
         />
       </View>
     );

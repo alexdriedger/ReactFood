@@ -5,6 +5,7 @@ import {
   StyleSheet,
   Image,
 } from 'react-native';
+import moment from 'moment';
 
 const styles = StyleSheet.create({
   container: {
@@ -61,6 +62,9 @@ const styles = StyleSheet.create({
 class EventDetail extends Component {
   render() {
     const { item } = this.props.navigation.state.params;
+    const start = moment(item.start_time).format('MMM Do YY');
+    console.log("render log");
+    console.log(start);
     return (
       <View style={styles.container}>
         <Image
@@ -70,14 +74,15 @@ class EventDetail extends Component {
         <View style={styles.titleContainer}>
           <View style={styles.dateContainer}>
             {/*  TODO : DATE PARSING*/}
-            <Text style={styles.dateText}>25</Text>
-            <Text style={styles.monthText}>Jan</Text>
+            <Text style={styles.dateText}>{moment(item.start_time).format('DD')}</Text>
+            <Text style={styles.monthText}>{moment(item.start_time).format('MMM')}</Text>
           </View>
           <View style={styles.headingContainer}>
             <Text style={styles.eventName}>{item.name}</Text>
             <Text style={styles.eventOrganizer}>{item.owner.name}</Text>
           </View>
         </View>
+        <Text>{this.now}</Text>
       </View>
     );
   }
