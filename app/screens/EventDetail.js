@@ -4,6 +4,7 @@ import {
   Text,
   StyleSheet,
   Image,
+  ScrollView,
 } from 'react-native';
 import moment from 'moment';
 
@@ -56,17 +57,27 @@ const styles = StyleSheet.create({
   eventOrganizer: {
     fontSize: 12,
     color: 'grey',
-  }
+  },
+  descriptionContainer: {
+    padding: 8,
+  },
+  descriptionTitle: {
+    fontWeight: 'bold',
+    fontSize: 14,
+    color: 'black',
+  },
+  descriptionText: {
+    fontSize: 13,
+    textAlign: 'justify',
+    color: 'black',
+  },
 });
 
 class EventDetail extends Component {
   render() {
     const { item } = this.props.navigation.state.params;
-    const start = moment(item.start_time).format('MMM Do YY');
-    console.log("render log");
-    console.log(start);
     return (
-      <View style={styles.container}>
+      <ScrollView style={styles.container}>
         <Image
           style={styles.image}
           source={{uri: item.cover.source}}
@@ -82,8 +93,11 @@ class EventDetail extends Component {
             <Text style={styles.eventOrganizer}>{item.owner.name}</Text>
           </View>
         </View>
-        <Text>{this.now}</Text>
-      </View>
+        <View style={styles.descriptionContainer}>
+          <Text style={styles.descriptionTitle}>Description</Text>
+          <Text style={styles.descriptionText}>{item.description}</Text>
+        </View>
+      </ScrollView>
     );
   }
 }
