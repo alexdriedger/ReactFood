@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import {
-  SectionList,
   View,
-  Text,
   StyleSheet,
-  TouchableHighlight,
-  Button,
   FlatList,
 } from 'react-native';
 
@@ -28,8 +24,8 @@ const styles = StyleSheet.create({
   },
   separator: {
     height: 12,
-    backgroundColor: "#CED0CE",
-  }
+    backgroundColor: '#CED0CE',
+  },
 });
 
 const data = require('../../mockData/month_1.json');
@@ -45,7 +41,7 @@ class EventList extends Component {
       <View style={styles.items} >
         {/* TODO : Pass navigation better */}
         <EventRow
-          onPress={() => this.props.navigation.navigate('EventDetail', {...item})}
+          onPress={() => this.props.navigation.navigate('EventDetail', { ...item })}
           event={item.item}
         />
       </View>
@@ -57,7 +53,7 @@ class EventList extends Component {
         <FlatList
           data={data}
           renderItem={this.renderItem}
-          keyExtractor={(item) => item.id}
+          keyExtractor={item => item.id}
           ItemSeparatorComponent={this.renderSeparator}
         />
       </View>

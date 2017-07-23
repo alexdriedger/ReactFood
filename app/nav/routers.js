@@ -1,4 +1,3 @@
-import React from 'react';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 
 import AllEvents from '../screens/AllEvents';
@@ -6,7 +5,7 @@ import FavEvents from '../screens/FavEvents';
 import EventDetail from '../screens/EventDetail';
 
 export const EventsTabs = TabNavigator({
-  AllEvents:  {
+  AllEvents: {
     screen: AllEvents,
     navigationOptions: {
       tabBarLabel: 'Upcoming Food',
@@ -15,7 +14,7 @@ export const EventsTabs = TabNavigator({
   FavEvents: {
     screen: FavEvents,
     navigationOptions: {
-        tabBarLabel: 'My Food',
+      tabBarLabel: 'My Food',
     },
   },
 });

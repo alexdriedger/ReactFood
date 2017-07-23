@@ -80,7 +80,7 @@ class EventDetail extends Component {
       <ScrollView style={styles.container}>
         <Image
           style={styles.image}
-          source={{uri: item.cover.source}}
+          source={{ uri: item.cover.source }}
         />
         <View style={styles.titleContainer}>
           <View style={styles.dateContainer}>
