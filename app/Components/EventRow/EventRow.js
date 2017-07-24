@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
   textContainer: {
     flex: 7,
     justifyContent: 'center',
+    marginRight: 16,
   },
   eventName: {
     fontSize: 15,
@@ -49,17 +50,6 @@ const styles = StyleSheet.create({
   eventLocation: {
     fontSize: 13,
   },
-  starContainer: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 24,
-    marginRight: 12,
-  },
-  star: {
-    width: 24,
-    height: 24,
-  }
 });
 
 class EventRow extends Component {
@@ -100,12 +90,6 @@ class EventRow extends Component {
                 numberOfLines={1}
                 ellipsizeMode={'tail'}
               >{event.place.name}</Text>
-            </View>
-            <View style={styles.starContainer}>
-              <Image
-                style={styles.star}
-                source={require('../../assets/ic_star_border_black_24dp.png')}
-              />
             </View>
           </View>
         </View>
