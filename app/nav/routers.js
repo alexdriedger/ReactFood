@@ -1,27 +1,26 @@
-import { TabNavigator, StackNavigator } from 'react-navigation';
+import React from 'react';
+import { StackNavigator } from 'react-navigation';
+import {
+  StyleSheet,
+  View,
+} from 'react-native';
 
 import AllEvents from '../screens/AllEvents';
-import FavEvents from '../screens/FavEvents';
 import EventDetail from '../screens/EventDetail';
 
-export const EventsTabs = TabNavigator({
-  AllEvents: {
-    screen: AllEvents,
-    navigationOptions: {
-      tabBarLabel: 'Upcoming Food',
-    },
+const styles = StyleSheet.create({
+  headerStyle: {
+    backgroundColor: '#002145',
   },
-  FavEvents: {
-    screen: FavEvents,
-    navigationOptions: {
-      tabBarLabel: 'My Food',
-    },
+  headerText: {
+    color: 'white',
+    alignSelf: 'center',
   },
 });
 
 export const RootStack = StackNavigator({
   RootScreen: {
-    screen: EventsTabs,
+    screen: AllEvents,
     navigationOptions: {
       title: 'UBC Feed Me',
     },
@@ -30,6 +29,12 @@ export const RootStack = StackNavigator({
     screen: EventDetail,
     navigationOptions: {
       title: 'Event Detail Title',
+      headerRight: <View />,
     },
+  },
+}, {
+  navigationOptions: {
+    headerStyle: styles.headerStyle,
+    headerTitleStyle: styles.headerText,
   },
 });
