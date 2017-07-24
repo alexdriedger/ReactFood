@@ -3,6 +3,7 @@ import { StackNavigator } from 'react-navigation';
 import {
   StyleSheet,
   View,
+  StatusBar,
 } from 'react-native';
 
 import AllEvents from '../screens/AllEvents';
@@ -16,6 +17,14 @@ const styles = StyleSheet.create({
     color: 'white',
     alignSelf: 'center',
   },
+  transparentHeader: {
+    position: 'absolute',
+    backgroundColor: 'transparent',
+    zIndex: 100,
+    top: 0,
+    left: 0,
+    right: 0,
+  },
 });
 
 export const RootStack = StackNavigator({
@@ -28,8 +37,9 @@ export const RootStack = StackNavigator({
   EventDetail: {
     screen: EventDetail,
     navigationOptions: {
-      title: 'Event Detail Title',
+      title: '',
       headerRight: <View />,
+      headerStyle: styles.transparentHeader,
     },
   },
 }, {
