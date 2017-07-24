@@ -17,14 +17,17 @@ const styles = StyleSheet.create({
     color: 'white',
     alignSelf: 'center',
   },
-  transparentHeader: {
-    position: 'absolute',
-    backgroundColor: 'transparent',
-    zIndex: 100,
-    top: 0,
-    left: 0,
-    right: 0,
+  headerBack: {
+    color: 'white',
   },
+  // transparentHeader: {
+  //   position: 'absolute',
+  //   backgroundColor: 'transparent',
+  //   zIndex: 100,
+  //   top: 0,
+  //   left: 0,
+  //   right: 0,
+  // },
 });
 
 export const RootStack = StackNavigator({
@@ -37,14 +40,17 @@ export const RootStack = StackNavigator({
   EventDetail: {
     screen: EventDetail,
     navigationOptions: {
-      title: '',
+      // title: '',
       headerRight: <View />,
-      headerStyle: styles.transparentHeader,
+      // headerStyle: styles.transparentHeader,
     },
   },
 }, {
   navigationOptions: {
     headerStyle: styles.headerStyle,
     headerTitleStyle: styles.headerText,
+    headerBackTitleStyle: styles.headerBack,
+    headerTintColor: 'white',
+    headerBackTitle: null,
   },
 });

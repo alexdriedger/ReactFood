@@ -74,6 +74,9 @@ const styles = StyleSheet.create({
 });
 
 class EventDetail extends Component {
+  static navigationOptions = ({ navigation }) => ({
+    title: navigation.state.params.item.name,
+  });
   render() {
     const { item } = this.props.navigation.state.params;
     return (
@@ -84,7 +87,6 @@ class EventDetail extends Component {
         />
         <View style={styles.titleContainer}>
           <View style={styles.dateContainer}>
-            {/*  TODO : DATE PARSING*/}
             <Text style={styles.dateText}>{moment(item.start_time).format('DD')}</Text>
             <Text style={styles.monthText}>{moment(item.start_time).format('MMM')}</Text>
           </View>
@@ -92,6 +94,9 @@ class EventDetail extends Component {
             <Text style={styles.eventName}>{item.name}</Text>
             <Text style={styles.eventOrganizer}>{item.owner.name}</Text>
           </View>
+        </View>
+        <View style={styles.quickInfoContainer}>
+
         </View>
         <View style={styles.descriptionContainer}>
           <Text style={styles.descriptionTitle}>Description</Text>
