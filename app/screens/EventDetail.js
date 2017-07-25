@@ -7,6 +7,9 @@ import {
   ScrollView,
 } from 'react-native';
 import moment from 'moment';
+import Icon from 'react-native-vector-icons/FontAwesome';
+
+import QuickInfoRow from '../Components/QuickInfoRow';
 
 const styles = StyleSheet.create({
   container: {
@@ -58,6 +61,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     color: 'grey',
   },
+  quickInfoContainer: {
+    flexDirection: 'column',
+    borderColor: 'gainsboro',
+    borderBottomWidth: 1,
+    padding: 16,
+  },
   descriptionContainer: {
     padding: 8,
   },
@@ -96,7 +105,16 @@ class EventDetail extends Component {
           </View>
         </View>
         <View style={styles.quickInfoContainer}>
-
+          <QuickInfoRow
+            iconName={'access-time'}
+            iconSize={30}
+            text={moment(item.start_time).format('ddd, MMM Do [at] h:mm a [-] ') + moment(item.end_time).format('h:mm a')}
+          />
+          <QuickInfoRow
+            iconName={'location-on'}
+            iconSize={30}
+            text={item.place.name}
+          />
         </View>
         <View style={styles.descriptionContainer}>
           <Text style={styles.descriptionTitle}>Description</Text>
