@@ -5,11 +5,13 @@ import {
   StyleSheet,
   Image,
   ScrollView,
+  Linking,
 } from 'react-native';
 import moment from 'moment';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import QuickInfoRow from '../Components/QuickInfoRow';
+import FacebookButton from '../Components/FacebookButton';
 
 const styles = StyleSheet.create({
   container: {
@@ -80,12 +82,20 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     color: 'black',
   },
+  seperator: {
+    height: 12,
+    backgroundColor: '#CED0CE',
+  }
 });
 
 class EventDetail extends Component {
   static navigationOptions = ({ navigation }) => ({
     title: navigation.state.params.item.name,
   });
+  openFBLink = (id) => {
+    const url = 'fb://event/'.concat(id);
+    Linking.openURL(url);
+  }
   render() {
     const { item } = this.props.navigation.state.params;
     return (
@@ -116,6 +126,13 @@ class EventDetail extends Component {
             text={item.place.name}
           />
         </View>
+        <FacebookButton
+          onPress={() => this.openFBLink(item.id)}
+          text={'Event'}
+        />
+        <View
+          style={styles.seperator}
+        />
         <View style={styles.descriptionContainer}>
           <Text style={styles.descriptionTitle}>Description</Text>
           <Text style={styles.descriptionText}>{item.description}</Text>
