@@ -93,8 +93,11 @@ class EventDetail extends Component {
     title: navigation.state.params.item.name,
   });
   openFBLink = (id) => {
-    const url = 'fb://event/'.concat(id);
-    Linking.openURL(url);
+    let url = 'fb://event/'.concat(id);
+    Linking.openURL(url).catch(err => {
+      url = 'https://www.facebook.com/events/'.concat(id);
+      Linking.openURL(url).catch(err => console.log('Could not open facebook event'))
+    });
   }
   render() {
     const { item } = this.props.navigation.state.params;
