@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const data = require('../../mockData/month_1.json');
+const data = require('../../mockData/jan_2017.json');
 
 class EventList extends Component {
   renderSeparator = () => {
