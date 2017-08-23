@@ -4,8 +4,9 @@ import {
   StyleSheet,
   FlatList,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
-import EventRow from '../EventRow/EventRow';
+import EventRow from './EventRow/EventRow';
 
 const styles = StyleSheet.create({
   container: {
@@ -28,30 +29,23 @@ const styles = StyleSheet.create({
   },
 });
 
-const data = require('../../mockData/jan_2017.json');
-
 class EventList extends Component {
-  renderSeparator = () => {
-    return (
-      <View style={styles.separator} />
-    );
-  };
-  renderItem = (item) => {
-    return (
-      <View style={styles.items} >
-        {/* TODO : Pass navigation better */}
-        <EventRow
-          onPress={() => this.props.navigation.navigate('EventDetail', { ...item })}
-          event={item.item}
-        />
-      </View>
-    );
-  };
+  renderSeparator = () => (
+    <View style={styles.separator} />
+  );
+  renderItem = item => (
+    <View style={styles.items} >
+      <EventRow
+        onPress={() => this.props.onPress(item)}
+        event={item.item}
+      />
+    </View>
+  );
   render() {
     return (
       <View style={styles.container}>
         <FlatList
-          data={data}
+          data={this.props.events}
           renderItem={this.renderItem}
           keyExtractor={item => item.id}
           ItemSeparatorComponent={this.renderSeparator}
@@ -60,5 +54,19 @@ class EventList extends Component {
     );
   }
 }
+
+EventList.propTypes = {
+  onPress: PropTypes.func.isRequired,
+
+  // Event Properties
+  events: PropTypes.arrayOf(
+    PropTypes.shape({
+      eventName: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      startTime: PropTypes.string.isRequired,
+      locationName: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
+};
 
 export default EventList;
