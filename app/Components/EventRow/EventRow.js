@@ -97,5 +97,5 @@ class EventRow extends Component {
     )
   }
 }
-
+// TODO : PROP VALIDATION
 export default EventRow;

@@ -7,6 +7,7 @@ import EventList from '../Components/EventList';
 const events = require('../mockData/jan_2017.json');
 
 class VisibleEventList extends Component {
+  // TODO : ON PRESS WITH EVENT ID
   _onPress = (event) => {
     console.log('event: ', event);
     this.props.navigation.navigate('EventDetail', { ...event });

@@ -33,6 +33,7 @@ class EventList extends Component {
   renderSeparator = () => (
     <View style={styles.separator} />
   );
+  // TODO : ONLY PASS NECESSARY PROPS TO EVENT ROW
   renderItem = item => (
     <View style={styles.items} >
       <EventRow
