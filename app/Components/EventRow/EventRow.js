@@ -70,10 +70,10 @@ class EventRow extends Component {
             <View style={styles.dateContainer}>
               <Text
                 style={styles.monthText}
-              >{moment(event.start_time).format('MMM')}</Text>
+              >{moment(event.startTime).format('MMM')}</Text>
               <Text
                 style={styles.dateText}
-              >{moment(event.start_time).format('DD')}</Text>
+              >{moment(event.startTime).format('DD')}</Text>
             </View>
             <View style={styles.textContainer} >
               <Text
@@ -83,7 +83,7 @@ class EventRow extends Component {
               >{event.eventName}</Text>
               <Text
                 style={styles.eventTime}
-              >{moment(event.start_time).calendar()}</Text>
+              >{moment(event.startTime).calendar()}</Text>
               <Text
                 style={styles.eventLocation}
                 numberOfLines={1}
