@@ -62,6 +62,7 @@ EventList.propTypes = {
   // Event Properties
   events: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string.isRequired,
       eventName: PropTypes.string.isRequired,
       image: PropTypes.string.isRequired,
       startTime: PropTypes.string.isRequired,

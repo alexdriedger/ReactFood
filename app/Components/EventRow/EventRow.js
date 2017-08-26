@@ -7,6 +7,7 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   container: {
@@ -63,15 +64,13 @@ class EventRow extends Component {
         <View style={styles.container}>
           <Image
             style={styles.image}
-            source={{uri: event.cover.source}}
+            source={{ uri: event.image }}
           />
           <View style={styles.infoContainer}>
             <View style={styles.dateContainer}>
-              {/*  TODO : USE ACTUAL DATE*/}
               <Text
                 style={styles.monthText}
               >{moment(event.start_time).format('MMM')}</Text>
-              {/*  TODO : USE ACTUAL DATE*/}
               <Text
                 style={styles.dateText}
               >{moment(event.start_time).format('DD')}</Text>
@@ -81,7 +80,7 @@ class EventRow extends Component {
                 style={styles.eventName}
                 numberOfLines={1}
                 ellipsizeMode={'tail'}
-              >{event.name}</Text>
+              >{event.eventName}</Text>
               <Text
                 style={styles.eventTime}
               >{moment(event.start_time).calendar()}</Text>
@@ -89,7 +88,7 @@ class EventRow extends Component {
                 style={styles.eventLocation}
                 numberOfLines={1}
                 ellipsizeMode={'tail'}
-              >{event.place.name}</Text>
+              >{event.locationName}</Text>
             </View>
           </View>
         </View>
@@ -97,5 +96,14 @@ class EventRow extends Component {
     )
   }
 }
-// TODO : PROP VALIDATION
+
+EventRow.propTypes = {
+  event: PropTypes.shape({
+    eventName: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    startTime: PropTypes.string.isRequired,
+    locationName: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
 export default EventRow;

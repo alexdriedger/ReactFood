@@ -14,4 +14,11 @@ export const navigationType = {
       params: PropTypes.object,
     }).isRequired,
   }).isRequired,
-}
+};
+
+export const eventRowType = PropTypes.shape({
+  eventName: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  startTime: PropTypes.string.isRequired,
+  locationName: PropTypes.string.isRequired,
+});

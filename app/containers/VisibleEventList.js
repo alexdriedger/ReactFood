@@ -1,22 +1,34 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
 import { navigationType } from '../common/PropTypes';
 import EventList from '../Components/EventList';
 
-const events = require('../mockData/jan_2017.json');
-
 class VisibleEventList extends Component {
+  constructor(props) {
+    super(props);
+    this.events = require('../mockData/jan_2017.json');
+
+    // TODO : USE SELECTOR
+    this.events = this.events.map(event => ({
+      id: event.id,
+      eventName: event.name,
+      image: event.cover.source,
+      startTime: event.start_time,
+      locationName: event.end_time,
+    }));
+
+    console.log(this.events);
+  }
+
   // TODO : ON PRESS WITH EVENT ID
   _onPress = (event) => {
-    console.log('event: ', event);
     this.props.navigation.navigate('EventDetail', { ...event });
   }
 
   render() {
     return (
       <EventList
-        events={events}
+        events={this.events}
         onPress={this._onPress}
       />
     );
