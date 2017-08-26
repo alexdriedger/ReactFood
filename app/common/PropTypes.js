@@ -15,10 +15,3 @@ export const navigationType = {
     }).isRequired,
   }).isRequired,
 };
-
-export const eventRowType = PropTypes.shape({
-  eventName: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  startTime: PropTypes.string.isRequired,
-  locationName: PropTypes.string.isRequired,
-});
