@@ -93,11 +93,12 @@ class EventRow extends Component {
           </View>
         </View>
       </TouchableHighlight>
-    )
+    );
   }
 }
 
 EventRow.propTypes = {
+  onPress: PropTypes.func.isRequired,
   event: PropTypes.shape({
     eventName: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,

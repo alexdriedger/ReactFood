@@ -34,11 +34,11 @@ class EventList extends Component {
     <View style={styles.separator} />
   );
   // TODO : ONLY PASS NECESSARY PROPS TO EVENT ROW
-  renderItem = item => (
+  renderItem = event => (
     <View style={styles.items} >
       <EventRow
-        onPress={() => this.props.onPress(item)}
-        event={item.item}
+        onPress={() => this.props.onPress(event)}
+        event={event.item}
       />
     </View>
   );
@@ -48,7 +48,7 @@ class EventList extends Component {
         <FlatList
           data={this.props.events}
           renderItem={this.renderItem}
-          keyExtractor={item => item.id}
+          keyExtractor={event => event.id}
           ItemSeparatorComponent={this.renderSeparator}
         />
       </View>
