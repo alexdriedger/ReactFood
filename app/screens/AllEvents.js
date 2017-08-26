@@ -4,7 +4,7 @@ import {
   View,
 } from 'react-native';
 
-import EventList from '../Components/EventList/EventList';
+import VisibleEventList from '../containers/VisibleEventList';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,8 +16,7 @@ class AllEvents extends Component {
   render() {
     return (
       <View style={styles.container}>
-        {/* Passing navigation like this is probably terrible practice */}
-        <EventList navigation={this.props.navigation}/>
+        <VisibleEventList navigation={this.props.navigation} />
       </View>
     );
   }
