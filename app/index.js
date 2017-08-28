@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { Provider } from 'react-redux';
+import logger from 'redux-logger';
 
 import { RootStack } from './nav/routers';
 import rootReducer from './reducers/EventReducer';
@@ -8,7 +9,13 @@ import rootReducer from './reducers/EventReducer';
 // TODO : DELETE THIS
 import * as actions from './actions/EventActions';
 
-const store = createStore(rootReducer);
+const middlewares = [];
+
+if (__DEV__) {
+  middlewares.push(logger);
+}
+
+const store = compose(applyMiddleware(...middlewares))(createStore)(rootReducer);
 // console.log(store.getState());
 
 const events = require('./mockData/jan_2017.json');
