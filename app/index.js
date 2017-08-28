@@ -16,8 +16,8 @@ if (__DEV__) {
 }
 
 const store = compose(applyMiddleware(...middlewares))(createStore)(rootReducer);
-// console.log(store.getState());
 
+// TODO : REMOVE AND REPLACE WITH API CALL
 const events = require('./mockData/free_food.json');
 store.dispatch(actions.addEvents(events.events));
 
