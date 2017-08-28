@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
-import EventRow from './EventRow/EventRow';
+import EventRow from './EventRow';
 
 const styles = StyleSheet.create({
   container: {
