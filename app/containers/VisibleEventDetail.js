@@ -4,7 +4,6 @@ import EventDetail from '../Components/EventDetail';
 
 const mapStateToProps = (state, ownProps) => {
   const { id } = ownProps;
-  console.log(state);
   return {
     event: {
       id: state.events.byId[id].id,
