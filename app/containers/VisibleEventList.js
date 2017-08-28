@@ -10,7 +10,6 @@ const getCorrectProps = (state, id) => ({
   locationName: state.events.byId[id].place.name,
 });
 
-// TODO : MAKE SURE THIS DOESN'T MUTATE STATE
 const mapStateToProps = state => ({
   events: state.events.allIds.map(id => getCorrectProps(state, id)),
 });
