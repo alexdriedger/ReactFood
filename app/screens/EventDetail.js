@@ -4,13 +4,13 @@ import VisibleEventDetail from '../containers/VisibleEventDetail';
 
 class EventDetail extends Component {
   static navigationOptions = ({ navigation }) => ({
-    title: navigation.state.params.item.eventName,
+    title: navigation.state.params.name,
   });
   render() {
-    const { item } = this.props.navigation.state.params;
+    console.log('screen navigation state: ', this.props.navigation.state);
     return (
       <VisibleEventDetail
-        event={item}
+        id={this.props.navigation.state.params.id}
       />
     );
   }

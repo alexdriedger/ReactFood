@@ -18,9 +18,8 @@ if (__DEV__) {
 const store = compose(applyMiddleware(...middlewares))(createStore)(rootReducer);
 // console.log(store.getState());
 
-const events = require('./mockData/jan_2017.json');
-store.dispatch(actions.addEvents(events));
-// console.log(store.getState());
+const events = require('./mockData/free_food.json');
+store.dispatch(actions.addEvents(events.events));
 
 class App extends Component {
   render() {

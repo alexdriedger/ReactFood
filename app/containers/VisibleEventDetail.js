@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import EventDetail from '../Components/EventDetail';
 
-class VisibleEventDetail extends Component {
-  constructor(props) {
-    super(props);
-    this.events = require('../mockData/jan_2017.json');
+const mapStateToProps = (state, ownProps) => {
+  const { id } = ownProps;
+  console.log(state);
+  return {
+    event: {
+      id: state.events.byId[id].id,
+      eventName: state.events.byId[id].name,
+      organizerName: state.events.byId[id].name,
+      locationName: state.events.byId[id].name,
+      image: state.events.byId[id].cover.source,
+      startTime: state.events.byId[id].start_time,
+      endTime: state.events.byId[id].end_time,
+      description: state.events.byId[id].description,
+    },
+  };
+};
 
-    this.event = this.events.filter(event => event.id === props.event.id);
-    this.event = this.event[0];
-    console.log('event is: ', this.event);
-
-    this.event = Object.assign({}, {
-      id: this.event.id,
-      eventName: this.event.name,
-      organizerName: this.event.owner.name,
-      locationName: this.event.place.name,
-      image: this.event.cover.source,
-      startTime: this.event.start_time,
-      endTime: this.event.end_time,
-      description: this.event.description,
-    });
-    console.log('event is after object.assign: ', this.event);
-  }
-
-  render() {
-    return (
-      <EventDetail
-        event={this.event}
-      />
-    );
-  }
-}
+const VisibleEventDetail = connect(
+  mapStateToProps,
+)(EventDetail);
 
 export default VisibleEventDetail;
