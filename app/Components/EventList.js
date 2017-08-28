@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 
-import EventRow from './EventRow/EventRow';
+import EventRow from './EventRow';
 
 const styles = StyleSheet.create({
   container: {
@@ -37,7 +37,7 @@ class EventList extends Component {
   renderItem = event => (
     <View style={styles.items} >
       <EventRow
-        onPress={() => this.props.onPress(event)}
+        onPress={() => this.props.onPress(event.item.id, event.item.eventName)}
         event={event.item}
       />
     </View>
