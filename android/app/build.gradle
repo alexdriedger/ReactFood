@@ -98,8 +98,8 @@ android {
         applicationId "com.reactfood"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode versionMajor * 10000 + versionMinor * 100 + versionPatch
-        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        versionCode 1
+        versionName "1.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
