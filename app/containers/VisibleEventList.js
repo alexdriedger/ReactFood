@@ -10,9 +10,33 @@ const getCorrectProps = (state, id) => ({
   locationName: state.events.byId[id].place.name,
 });
 
-const mapStateToProps = state => ({
-  events: state.events.allIds.map(id => getCorrectProps(state, id)),
-});
+// Check if events is empty
+const mapStateToProps = state => {
+  const { selectedSchool } = state;
+  const {
+    isFetching,
+    lastUpdated,
+    allIds,
+  } = state.events || {
+    isFetching: true,
+  };
+
+  // If there are events, map ids to events
+  const events = (typeof allIds !== 'undefined' && allIds.length > 0)
+    ? allIds.map(id => getCorrectProps(state, id))
+    : [];
+
+  return {
+    selectedSchool,
+    isFetching,
+    lastUpdated,
+    events,
+  };
+
+  // return {
+  //   events: state.events.events.allIds.map(id => getCorrectProps(state, id)),
+  // };
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onPress: (eventId, eventName) => {
