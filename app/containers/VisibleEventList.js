@@ -10,9 +10,10 @@ const getCorrectProps = (state, id) => ({
   locationName: state.events.byId[id].place.name,
 });
 
-// Check if events is empty
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   const { selectedSchool } = state;
+
+  // TODO : CHECK TO SEE WHAT THIS ACTUALLY DOES
   const {
     isFetching,
     lastUpdated,
@@ -21,6 +22,7 @@ const mapStateToProps = state => {
     isFetching: true,
   };
 
+  // TODO : SORT EVENTS BY DATE
   // If there are events, map ids to events
   const events = (typeof allIds !== 'undefined' && allIds.length > 0)
     ? allIds.map(id => getCorrectProps(state, id))
@@ -32,10 +34,6 @@ const mapStateToProps = state => {
     lastUpdated,
     events,
   };
-
-  // return {
-  //   events: state.events.events.allIds.map(id => getCorrectProps(state, id)),
-  // };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => ({

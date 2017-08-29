@@ -1,3 +1,5 @@
+// TODO : DELETE?
+
 import * as actions from './ActionTypes';
 
 export function addEvents(events) {

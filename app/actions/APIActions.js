@@ -1,3 +1,4 @@
+// TODO : INVESTIGATE MORE REPUTABLE BASE 64 LIB
 import base64 from 'base-64';
 import * as actions from './ActionTypes';
 
@@ -34,15 +35,15 @@ export function receiveEvents(school, json) {
 export function fetchEvents(school) {
   return function (dispatch) {
     dispatch(requestEvents(school));
+    // TODO : CREATE CONSTANT THAT IS API ENPOINT
+    // TODO : CREATE CONSTANT THAT IS API VERSION NUMBER
+    // TODO : CREATE CONSTANT THAT IS API UN AND PW
     return fetch(`https://fff-api-heroku.herokuapp.com/food/api/v1.0/schools/${school}/events`, {
       headers: {
         Authorization: 'Basic ' + base64.encode('free_food_app' + ':' + 'FreeFoodIsTheBest'),
       },
     })
     .then(response => response.json())
-    .then(json => {
-      // console.log(json);
-      dispatch(receiveEvents(school, json));
-    });
+    .then(json => dispatch(receiveEvents(school, json)));
   };
 }
