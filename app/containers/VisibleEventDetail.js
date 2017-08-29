@@ -6,14 +6,14 @@ const mapStateToProps = (state, ownProps) => {
   const { id } = ownProps;
   return {
     event: {
-      id: state.events.events.byId[id].id,
-      eventName: state.events.events.byId[id].name,
-      organizerName: state.events.events.byId[id].name,
-      locationName: state.events.events.byId[id].name,
-      image: state.events.events.byId[id].cover.source,
-      startTime: state.events.events.byId[id].start_time,
-      endTime: state.events.events.byId[id].end_time,
-      description: state.events.events.byId[id].description,
+      id: state.events.byId[id].id,
+      eventName: state.events.byId[id].name,
+      organizerName: state.events.byId[id].name,
+      locationName: state.events.byId[id].name,
+      image: state.events.byId[id].cover.source,
+      startTime: state.events.byId[id].start_time,
+      endTime: state.events.byId[id].end_time,
+      description: state.events.byId[id].description,
     },
   };
 };
