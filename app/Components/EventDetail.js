@@ -16,6 +16,7 @@ import FacebookButton from '../Components/FacebookButton';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'white',
   },
   image: {
     height: 200,
@@ -44,7 +45,6 @@ const styles = StyleSheet.create({
   },
   monthText: {
     fontSize: 16,
-    lineHeight: 14,
     color: 'orangered',
     textAlign: 'center',
     fontWeight: '100',
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     borderColor: 'gainsboro',
     borderBottomWidth: 1,
-    padding: 16,
+    padding: 8,
   },
   descriptionContainer: {
     padding: 8,
@@ -120,12 +120,14 @@ class EventDetail extends Component {
           <QuickInfoRow
             iconName={'access-time'}
             iconSize={30}
-            text={moment(event.starTime).format('ddd, MMM Do [at] h:mm a [-] ') + moment(event.endTime).format('h:mm a')}
+            topText={moment(event.startTime).format('ddd, MMM Do [at] h:mm a [-] ') + moment(event.endTime).format('h:mm a')}
+            bottomText={moment(event.startTime).fromNow()}
           />
           <QuickInfoRow
             iconName={'location-on'}
             iconSize={30}
-            text={event.locationName}
+            topText={event.locationName}
+            bottomText={event.address}
           />
         </View>
         <FacebookButton
@@ -150,6 +152,7 @@ EventDetail.propTypes = {
     eventName: PropTypes.string.isRequired,
     organizerName: PropTypes.string.isRequired,
     locationName: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     startTime: PropTypes.string.isRequired,
     endTime: PropTypes.string.isRequired,
