@@ -14,7 +14,6 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingBottom: 8,
     paddingLeft: 8,
-    backgroundColor: '#FFFFFF',
   },
   textContainer: {
     flexDirection: 'column',
