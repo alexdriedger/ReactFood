@@ -8,8 +8,9 @@ const mapStateToProps = (state, ownProps) => {
     event: {
       id: state.events.byId[id].id,
       eventName: state.events.byId[id].name,
-      organizerName: state.events.byId[id].name,
-      locationName: state.events.byId[id].name,
+      organizerName: state.events.byId[id].owner.name,
+      locationName: state.events.byId[id].place.name,
+      address: state.events.byId[id].place.location.street,
       image: state.events.byId[id].cover.source,
       startTime: state.events.byId[id].start_time,
       endTime: state.events.byId[id].end_time,
