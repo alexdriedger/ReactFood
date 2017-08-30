@@ -1,2 +1,6 @@
-export const ADD_EVENTS = 'ADD_EVENTS';
-export const ADD_EVENT = 'ADD_EVENT';
+export const SELECT_SCHOOL = 'SELECT_SCHOOL';
+export const INVALIDATE_SCHOOL = 'INVALIDATE_SCHOOL';
+
+// API actions
+export const REQUEST_EVENTS = 'REQUEST_EVENTS';
+export const RECEIVE_EVENTS = 'RECEIVE_EVENTS';
