@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+import moment from 'moment';
 
 import EventList from '../Components/EventList';
 
@@ -10,10 +11,30 @@ const getCorrectProps = (state, id) => ({
   locationName: state.events.byId[id].place.name,
 });
 
+/**
+ * Checks if event is in the future
+ * @param {*} state. Redux state
+ * @param {string} id of the event
+ */
+const isFutureEvent = (state, id) => {
+  const eventStartTime = moment(state.events.byId[id].start_time).valueOf();
+  const currentTime = moment().unix();
+
+  return eventStartTime > currentTime;
+};
+
+// TODO : USE SELECTOR TO IMPROVE PERFORMANCE
+const getEventsAndSort = (state, allIds) => allIds
+    // Filter out past events
+    .filter(id => isFutureEvent(state, id))
+    // Map ids of all events with details
+    .map(id => getCorrectProps(state, id))
+    // Sort events by date
+    .sort((a, b) => moment(a.startTime).valueOf() - moment(b.startTime).valueOf());
+
 const mapStateToProps = (state) => {
   const { selectedSchool } = state;
 
-  // TODO : CHECK TO SEE WHAT THIS ACTUALLY DOES
   const {
     isFetching,
     lastUpdated,
@@ -25,7 +46,7 @@ const mapStateToProps = (state) => {
   // TODO : SORT EVENTS BY DATE
   // If there are events, map ids to events
   const events = (typeof allIds !== 'undefined' && allIds.length > 0)
-    ? allIds.map(id => getCorrectProps(state, id))
+    ? getEventsAndSort(state, allIds)
     : [];
 
   return {

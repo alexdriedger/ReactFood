@@ -18,11 +18,13 @@ if (__DEV__) {
 
 const store = compose(applyMiddleware(...middlewares))(createStore)(rootReducer);
 
-// TODO : DISPATCH THESE AT CORRECT TIME/PLACE IN APP STRUCTURE
-store.dispatch(actions.selectSchool(1));
-store.dispatch(actions.fetchEvents(1));
-
 class App extends Component {
+  componentDidMount() {
+    // TODO : SELECT SCHOOL IN CORRECT PLACE
+    store.dispatch(actions.selectSchool(1));
+    // TODO : FETCH EVENTS FOR SCHOOL BASED ON STATE
+    store.dispatch(actions.fetchEvents(1));
+  }
   render() {
     return (
       <Provider store={store}>

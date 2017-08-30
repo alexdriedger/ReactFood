@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import * as actions from '../actions/ActionTypes';
 
-function selectSchool(state = {}, action) {
+function selectedSchool(state = {}, action) {
   switch (action.type) {
     case actions.SELECT_SCHOOL:
       return action.school;
@@ -44,7 +44,7 @@ function events(
 
 const rootReducer = combineReducers({
   events,
-  selectSchool,
+  selectedSchool,
 });
 
 export default rootReducer;
