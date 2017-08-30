@@ -43,7 +43,6 @@ const mapStateToProps = (state) => {
     isFetching: true,
   };
 
-  // TODO : SORT EVENTS BY DATE
   // If there are events, map ids to events
   const events = (typeof allIds !== 'undefined' && allIds.length > 0)
     ? getEventsAndSort(state, allIds)
