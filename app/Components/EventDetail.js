@@ -100,7 +100,6 @@ class EventDetail extends Component {
     const {
       event,
     } = this.props;
-    console.log(event);
     return (
       <ScrollView style={styles.container}>
         <Image
