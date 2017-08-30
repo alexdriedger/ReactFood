@@ -152,6 +152,7 @@ EventDetail.propTypes = {
     eventName: PropTypes.string.isRequired,
     organizerName: PropTypes.string.isRequired,
     locationName: PropTypes.string.isRequired,
+    address: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     startTime: PropTypes.string.isRequired,
     endTime: PropTypes.string.isRequired,
