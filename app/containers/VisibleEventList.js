@@ -17,7 +17,7 @@ const getCorrectProps = (state, id) => ({
  * @param {string} id of the event
  */
 const isFutureEvent = (state, id) => {
-  const eventStartTime = moment(state.events.byId[id].start_time).valueOf();
+  const eventStartTime = moment(state.events.byId[id].end_time).valueOf();
   const currentTime = moment().unix();
 
   return eventStartTime > currentTime;
