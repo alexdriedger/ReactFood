@@ -1,4 +1,4 @@
-package com.reactfood;
+package com.free.food.scavenge;
 
 import android.app.Application;
 
