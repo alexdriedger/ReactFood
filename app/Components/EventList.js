@@ -30,6 +30,13 @@ const styles = StyleSheet.create({
 });
 
 class EventList extends Component {
+  isRefreshing = () => {
+    if (this.props.isFetching === true) {
+      return true;
+    }
+    return false;
+  }
+
   renderSeparator = () => (
     <View style={styles.separator} />
   );
@@ -43,6 +50,7 @@ class EventList extends Component {
     </View>
   );
   render() {
+    console.log(this.props.schoolId);
     return (
       <View style={styles.container}>
         <FlatList
@@ -50,6 +58,8 @@ class EventList extends Component {
           renderItem={this.renderItem}
           keyExtractor={event => event.id}
           ItemSeparatorComponent={this.renderSeparator}
+          onRefresh={() => this.props.refresh(this.props.schoolId)}
+          refreshing={this.isRefreshing()}
         />
       </View>
     );
@@ -58,6 +68,7 @@ class EventList extends Component {
 
 EventList.propTypes = {
   onPress: PropTypes.func.isRequired,
+  refresh: PropTypes.func.isRequired,
 
   // Event Properties
   events: PropTypes.arrayOf(
@@ -69,6 +80,10 @@ EventList.propTypes = {
       locationName: PropTypes.string.isRequired,
     }).isRequired,
   ).isRequired,
+
+  isFetching: PropTypes.bool.isRequired,
+  // Keeps throwing a PropType warning even though schoolId is a number
+  schoolId: PropTypes.number.isRequired,
 };
 
 export default EventList;
