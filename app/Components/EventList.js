@@ -50,7 +50,6 @@ class EventList extends Component {
     </View>
   );
   render() {
-    console.log(this.props.schoolId);
     return (
       <View style={styles.container}>
         <FlatList
