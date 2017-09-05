@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import moment from 'moment';
 
 import EventList from '../Components/EventList';
+import * as actions from '../actions/APIActions';
 
 const getCorrectProps = (state, id) => ({
   id: state.events.byId[id].id,
@@ -37,7 +38,6 @@ const mapStateToProps = (state) => {
 
   const {
     isFetching,
-    lastUpdated,
     allIds,
   } = state.events || {
     isFetching: true,
@@ -49,9 +49,8 @@ const mapStateToProps = (state) => {
     : [];
 
   return {
-    selectedSchool,
+    schoolId: selectedSchool,
     isFetching,
-    lastUpdated,
     events,
   };
 };
@@ -59,6 +58,9 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onPress: (eventId, eventName) => {
     ownProps.navigation.navigate('EventDetail', { id: eventId, name: eventName });
+  },
+  refresh: (schoolId) => {
+    dispatch(actions.fetchEvents(schoolId));
   },
 });
 
