@@ -30,6 +30,10 @@ const styles = StyleSheet.create({
 });
 
 class EventList extends Component {
+  componentDidMount() {
+    this.props.refresh(this.props.schoolId);
+  }
+
   isRefreshing = () => {
     if (this.props.isFetching === true) {
       return true;

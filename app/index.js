@@ -40,9 +40,9 @@ class App extends Component {
   }
   componentDidMount() {
     // TODO : SELECT SCHOOL IN CORRECT PLACE
-    store.dispatch(actions.selectSchool(1));
+    // store.dispatch(actions.selectSchool(1));
     // TODO : FETCH EVENTS FOR SCHOOL BASED ON STATE
-    store.dispatch(actions.fetchEvents(1));
+    // store.dispatch(actions.fetchEvents(1));
   }
   render() {
     if (!this.state.rehydrated) {
@@ -50,6 +50,7 @@ class App extends Component {
         <SplashPage />
       );
     }
+    store.dispatch(actions.selectSchool(1));
     return (
       <Provider store={store}>
         <RootStack />
