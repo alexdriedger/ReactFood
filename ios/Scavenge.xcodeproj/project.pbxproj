@@ -1173,8 +1173,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.free.food.Scavenge;
 				PRODUCT_NAME = Scavenge;
-				PROVISIONING_PROFILE = "2f4f6a4a-b142-4ab9-9790-698a4f2ea5f5";
-				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.free.food.Scavenge";
+				PROVISIONING_PROFILE = "78ce41af-22ac-4e4f-afc0-f4908d99d0e3";
+				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc com.free.food.Scavenge";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
