@@ -11,6 +11,8 @@ const getCorrectProps = (state, id) => {
       name: locationName = '',
     } = {},
     cover: {
+      // TODO : HAVE DEFAULT EVENT IMAGE
+      // TODO : CHECK WHAT HAPPENS IF AN EVENT DOESN'T HAVE A COVER PIC
       source: image = '',
     } = {},
   } = state.events.byId[id];
