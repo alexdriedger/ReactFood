@@ -4,14 +4,28 @@ import EventDetail from '../Components/EventDetail';
 
 const mapStateToProps = (state, ownProps) => {
   const { id } = ownProps;
+
+  // Set default values if location and/or image does not exist
+  const {
+    place: {
+      name: locationName = 'Check Offical Event for Details',
+      location: {
+        street: address = 'Click FB Event button below',
+      } = {},
+    } = {},
+    cover: {
+      source: image = '',
+    } = {},
+  } = state.events.byId[id];
+
   return {
     event: {
       id: state.events.byId[id].id,
       eventName: state.events.byId[id].name,
       organizerName: state.events.byId[id].owner.name,
-      locationName: state.events.byId[id].place.name,
-      address: state.events.byId[id].place.location.street,
-      image: state.events.byId[id].cover.source,
+      locationName,
+      address,
+      image,
       startTime: state.events.byId[id].start_time,
       endTime: state.events.byId[id].end_time,
       description: state.events.byId[id].description,

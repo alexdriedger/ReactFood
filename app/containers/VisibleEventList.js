@@ -5,12 +5,20 @@ import EventList from '../Components/EventList';
 import * as actions from '../actions/APIActions';
 
 const getCorrectProps = (state, id) => {
-  const { place = {} } = state.events.byId[id];
-  const { name: locationName = '' } = place;
+  // Set default values if location and/or image does not exist
+  const {
+    place: {
+      name: locationName = '',
+    } = {},
+    cover: {
+      source: image = '',
+    } = {},
+  } = state.events.byId[id];
+
   return {
     id: state.events.byId[id].id,
     eventName: state.events.byId[id].name,
-    image: state.events.byId[id].cover.source,
+    image,
     startTime: state.events.byId[id].start_time,
     locationName,
   };
@@ -24,9 +32,6 @@ const getCorrectProps = (state, id) => {
 const isFutureEvent = (state, id) => {
   const eventStartTime = moment(state.events.byId[id].end_time).unix();
   const currentTime = moment().unix();
-
-  // TODO : DELETE THIS
-  return true;
 
   return eventStartTime > currentTime;
 };
