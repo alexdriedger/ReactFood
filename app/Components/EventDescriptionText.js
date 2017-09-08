@@ -33,7 +33,7 @@ class EventDescriptionText extends Component {
 
   _getNumLines = () => this.state.fullText ? 0 : 12;
 
-  _moreInfoButton = () => {
+  _renderMoreInfoButton = () => {
     // Description has been expanded
     if (this.state.fullText) {
       return null;
@@ -48,8 +48,6 @@ class EventDescriptionText extends Component {
   }
 
   render() {
-    const moreInfoButton = this._moreInfoButton();
-
     return (
       <View style={styles.container}>
         <Text style={styles.descriptionTitle}>Description</Text>
@@ -59,7 +57,7 @@ class EventDescriptionText extends Component {
             numberOfLines={this._getNumLines()}
             ellipsizeMode={'tail'}
           >{this.props.description}</Text>
-          {moreInfoButton}
+          {this._renderMoreInfoButton()}
         </View>
       </View>
     );
