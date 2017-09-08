@@ -4,13 +4,16 @@ import moment from 'moment';
 import EventList from '../Components/EventList';
 import * as actions from '../actions/APIActions';
 
-const getCorrectProps = (state, id) => ({
-  id: state.events.byId[id].id,
-  eventName: state.events.byId[id].name,
-  image: state.events.byId[id].cover.source,
-  startTime: state.events.byId[id].start_time,
-  locationName: state.events.byId[id].place.name,
-});
+const getCorrectProps = (state, id) => {
+  const { name: locationName = '' } = state.events.byId[id].place;
+  return {
+    id: state.events.byId[id].id,
+    eventName: state.events.byId[id].name,
+    image: state.events.byId[id].cover.source,
+    startTime: state.events.byId[id].start_time,
+    locationName,
+  };
+};
 
 /**
  * Checks if event is in the future
