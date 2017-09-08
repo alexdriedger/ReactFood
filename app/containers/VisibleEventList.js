@@ -5,7 +5,8 @@ import EventList from '../Components/EventList';
 import * as actions from '../actions/APIActions';
 
 const getCorrectProps = (state, id) => {
-  const { name: locationName = '' } = state.events.byId[id].place;
+  const { place = {} } = state.events.byId[id];
+  const { name: locationName = '' } = place;
   return {
     id: state.events.byId[id].id,
     eventName: state.events.byId[id].name,
@@ -23,6 +24,9 @@ const getCorrectProps = (state, id) => {
 const isFutureEvent = (state, id) => {
   const eventStartTime = moment(state.events.byId[id].end_time).unix();
   const currentTime = moment().unix();
+
+  // TODO : DELETE THIS
+  return true;
 
   return eventStartTime > currentTime;
 };
