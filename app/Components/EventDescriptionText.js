@@ -33,17 +33,22 @@ class EventDescriptionText extends Component {
 
   _getNumLines = () => this.state.fullText ? 0 : 12;
 
-  _moreInfoButton = () => (
-    <Text
-      style={[styles.descriptionText, styles.moreInfoText]}
-      onPress={() => { this.setState({ fullText: true }); console.log('pressed'); }}
-    >More Info</Text>
-  )
+  _moreInfoButton = () => {
+    // Description has been expanded
+    if (this.state.fullText) {
+      return null;
+    }
+
+    return (
+      <Text
+        style={[styles.descriptionText, styles.moreInfoText]}
+        onPress={() => this.setState({ fullText: true })}
+      >More Info</Text>
+    );
+  }
 
   render() {
-    const moreInfoButton = this.state.fullText ?
-      null :
-      this._moreInfoButton();
+    const moreInfoButton = this._moreInfoButton();
 
     return (
       <View style={styles.container}>
