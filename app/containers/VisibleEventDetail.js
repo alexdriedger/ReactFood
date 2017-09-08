@@ -14,9 +14,7 @@ const mapStateToProps = (state, ownProps) => {
       } = {},
     } = {},
     cover: {
-      // TODO : HAVE DEFAULT EVENT IMAGE
-      // TODO : CHECK WHAT HAPPENS IF AN EVENT DOESN'T HAVE A COVER PIC
-      source: image = '',
+      source: image = undefined,
     } = {},
   } = state.events.byId[id];
 
