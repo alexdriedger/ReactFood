@@ -43,7 +43,7 @@ class EventDescriptionText extends Component {
       <Text
         style={[styles.descriptionText, styles.moreInfoText]}
         onPress={() => this.setState({ fullText: true })}
-      >More Info</Text>
+      >See More</Text>
     );
   }
 
