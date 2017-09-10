@@ -7,12 +7,12 @@ import {
   TouchableHighlight,
 } from 'react-native';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     alignSelf: 'stretch',
-    height: 280,
   },
   image: {
     height: 200,
@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 1,
     backgroundColor: 'white',
+    height: 80,
   },
   dateContainer: {
     flex: 1,
@@ -53,6 +54,20 @@ const styles = StyleSheet.create({
 });
 
 class EventRow extends Component {
+
+  _renderEventImage = () => {
+    const { image } = this.props.event;
+    if (image === undefined) {
+      return null;
+    }
+    return (
+      <Image
+        style={styles.image}
+        source={{ uri: image }}
+      />
+    );
+  }
+
   render() {
     const { event } = this.props;
     return (
@@ -61,41 +76,46 @@ class EventRow extends Component {
         underlayColor={'transparent'}
       >
         <View style={styles.container}>
-          <Image
-            style={styles.image}
-            source={{uri: event.cover.source}}
-          />
+          {this._renderEventImage()}
           <View style={styles.infoContainer}>
             <View style={styles.dateContainer}>
-              {/*  TODO : USE ACTUAL DATE*/}
               <Text
                 style={styles.monthText}
-              >{moment(event.start_time).format('MMM')}</Text>
-              {/*  TODO : USE ACTUAL DATE*/}
+              >{moment(event.startTime).format('MMM')}</Text>
               <Text
                 style={styles.dateText}
-              >{moment(event.start_time).format('DD')}</Text>
+              >{moment(event.startTime).format('DD')}</Text>
             </View>
             <View style={styles.textContainer} >
               <Text
                 style={styles.eventName}
                 numberOfLines={1}
                 ellipsizeMode={'tail'}
-              >{event.name}</Text>
+              >{event.eventName}</Text>
               <Text
                 style={styles.eventTime}
-              >{moment(event.start_time).calendar()}</Text>
+              >{moment(event.startTime).calendar()}</Text>
               <Text
                 style={styles.eventLocation}
                 numberOfLines={1}
                 ellipsizeMode={'tail'}
-              >{event.place.name}</Text>
+              >{event.locationName}</Text>
             </View>
           </View>
         </View>
       </TouchableHighlight>
-    )
+    );
   }
 }
+
+EventRow.propTypes = {
+  onPress: PropTypes.func.isRequired,
+  event: PropTypes.shape({
+    eventName: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    startTime: PropTypes.string.isRequired,
+    locationName: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default EventRow;

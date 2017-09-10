@@ -1,0 +1,84 @@
+import { connect } from 'react-redux';
+import moment from 'moment';
+
+import EventList from '../Components/EventList';
+import * as actions from '../actions/APIActions';
+
+const getCorrectProps = (state, id) => {
+  // Set default values if location and/or image does not exist
+  const {
+    place: {
+      name: locationName = '',
+    } = {},
+    cover: {
+      source: image = undefined,
+    } = {},
+  } = state.events.byId[id];
+
+  return {
+    id: state.events.byId[id].id,
+    eventName: state.events.byId[id].name,
+    image,
+    startTime: state.events.byId[id].start_time,
+    locationName,
+  };
+};
+
+/**
+ * Checks if event is in the future
+ * @param {*} state. Redux state
+ * @param {string} id of the event
+ */
+const isFutureEvent = (state, id) => {
+  const eventStartTime = moment(state.events.byId[id].end_time).unix();
+  const currentTime = moment().unix();
+
+  return eventStartTime > currentTime;
+};
+
+// TODO : USE SELECTOR TO IMPROVE PERFORMANCE
+const getEventsAndSort = (state, allIds) => allIds
+    // Filter out past events
+    .filter(id => isFutureEvent(state, id))
+    // Map ids of all events with details
+    .map(id => getCorrectProps(state, id))
+    // Sort events by date
+    .sort((a, b) => moment(a.startTime).valueOf() - moment(b.startTime).valueOf());
+
+const mapStateToProps = (state) => {
+  const { selectedSchool } = state;
+
+  const {
+    isFetching,
+    allIds,
+  } = state.events || {
+    isFetching: true,
+  };
+
+  // If there are events, map ids to events
+  const events = (typeof allIds !== 'undefined' && allIds.length > 0)
+    ? getEventsAndSort(state, allIds)
+    : [];
+
+  return {
+    schoolId: selectedSchool,
+    isFetching,
+    events,
+  };
+};
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  onPress: (eventId, eventName) => {
+    ownProps.navigation.navigate('EventDetail', { id: eventId, name: eventName });
+  },
+  refresh: (schoolId) => {
+    dispatch(actions.fetchEvents(schoolId));
+  },
+});
+
+const VisibleEventList = connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(EventList);
+
+export default VisibleEventList;
