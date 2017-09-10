@@ -37,6 +37,10 @@ function events(
         allIds: action.events.allIds,
         lastUpdated: action.receivedAt,
       });
+    case actions.RECEIVE_EVENTS_FAILURE:
+      return Object.assign({}, state, {
+        isFetching: false,
+      });
     default:
       return state;
   }
