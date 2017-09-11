@@ -1,9 +1,9 @@
-const DESTINATIONS = {
+export const DESTINATIONS = {
   TELEMETRY: 'MOBILE_CENTER',
   DEV: 'CONSOLE',
 };
 
-const SEVERITY = {
+export const SEVERITY = {
   GENERAL: 'GENERTAL',
   WARN: 'WARN',
   ERROR: 'ERROR',
@@ -19,18 +19,17 @@ const SEVERITY = {
 function _logEvent(description, destination, severity, properties) {
   if (!__DEV__ && destination === DESTINATIONS.TELEMETRY) {
     // Send to telmetry
-  } else {
-    // Log to console
-    const logString = `Description: ${description}. Properties: ${properties}`;
+  } else if (__DEV__) {
+    // Log to console while not in production
     switch (severity) {
       case SEVERITY.GENERAL:
-        console.log(logString);
+        console.log('Description: ', description, '. Properties: ', properties);
         break;
       case SEVERITY.WARN:
-        console.warn(logString);
+        console.warn('Description: ', description, '. Properties: ', properties);
         break;
       case SEVERITY.ERROR:
-        console.error(logString);
+        console.error('Description: ', description, '. Properties: ', properties);
         break;
       default:
         console.error('Trying to log event with SEVERITY that is not recognized. Use one of SEVERITY');
