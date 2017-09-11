@@ -19,23 +19,23 @@ const SEVERITY = {
 function _logEvent(description, destination, severity, properties) {
   if (!__DEV__ && destination === DESTINATIONS.TELEMETRY) {
     // Send to telmetry
-  }
-
-  // Log to console
-  const logString = `Description: ${description}. Properties: ${properties}`;
-  switch (severity) {
-    case SEVERITY.GENERAL:
-      console.log(logString);
-      break;
-    case SEVERITY.WARN:
-      console.warn(logString);
-      break;
-    case SEVERITY.ERROR:
-      console.error(logString);
-      break;
-    default:
-      console.error('Trying to log event with SEVERITY that is not recognized. Use one of SEVERITY');
-      break;
+  } else {
+    // Log to console
+    const logString = `Description: ${description}. Properties: ${properties}`;
+    switch (severity) {
+      case SEVERITY.GENERAL:
+        console.log(logString);
+        break;
+      case SEVERITY.WARN:
+        console.warn(logString);
+        break;
+      case SEVERITY.ERROR:
+        console.error(logString);
+        break;
+      default:
+        console.error('Trying to log event with SEVERITY that is not recognized. Use one of SEVERITY');
+        break;
+    }
   }
 }
 
