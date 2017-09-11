@@ -1,4 +1,4 @@
-export const DESTINATIONS = {
+const DESTINATIONS = {
   TELEMETRY: 'MOBILE_CENTER',
   DEV: 'CONSOLE',
 };
