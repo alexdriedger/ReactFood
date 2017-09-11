@@ -12,8 +12,8 @@ export const SEVERITY = {
 /**
  * Log event
  * @param {string} description of event
- * @param {string} destination of event. One of DESTINATIONS
- * @param {string} severity of event. One of SEVERITY
+ * @param {DESTINATIONS} destination of event. One of DESTINATIONS
+ * @param {SEVERITY} severity of event. One of SEVERITY
  * @param {*} properties of event. Optional
  */
 function _logEvent(description, destination, severity, properties) {
@@ -40,14 +40,20 @@ function _logEvent(description, destination, severity, properties) {
 
 /**
  * Logs an event to the telemetry service
- * @param {*} description of event.
- * @param {*} severity of event. One of SEVERITY
- * @param {*} properties of event. Limited to 5 key, value pairs
+ * @param {string} description of event.
+ * @param {SEVERITY} severity of event. One of SEVERITY
+ * @param {*} properties of event. Limited to 5 key, value pairs. Optional
  */
 export function logTelemetry(description, severity, properties) {
   _logEvent(description, DESTINATIONS.TELEMETRY, severity, properties);
 }
 
+/**
+ * Logs an event to the console for developers
+ * @param {string} description of event.
+ * @param {SEVERITY} severity of event. One of SEVERITY
+ * @param {*} properties of event. Optional.
+ */
 export function logDev(description, severity, properties) {
   _logEvent(description, DESTINATIONS.DEV, severity, properties);
 }
