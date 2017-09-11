@@ -28,15 +28,9 @@ class App extends Component {
     // TODO : FETCH EVENTS FOR SCHOOL BASED ON STATE
     store.dispatch(actions.fetchEvents(1));
 
-    console.log('Analytics enabled: ');
-    console.log(await Analytics.isEnabled());
-    
     // Turn analytics and crashes on in production
     await Analytics.setEnabled(!__DEV__);
     await Crashes.setEnabled(!__DEV__);
-
-    console.log('Analytics enabled: ');
-    console.log(await Analytics.isEnabled());
 
     logTelemetry('App opened', SEVERITY.GENERAL);
   }
