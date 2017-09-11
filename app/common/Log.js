@@ -1,3 +1,5 @@
+import Analytics from 'mobile-center-analytics';
+
 const DESTINATIONS = {
   TELEMETRY: 'MOBILE_CENTER',
   DEV: 'CONSOLE',
@@ -18,7 +20,8 @@ export const SEVERITY = {
  */
 function _logEvent(description, destination, severity, properties) {
   if (!__DEV__ && destination === DESTINATIONS.TELEMETRY) {
-    // Send to telmetry
+    // Send telmetry
+    Analytics.trackEvent(description, properties);
   } else if (__DEV__) {
     // Log to console while not in production
     switch (severity) {
