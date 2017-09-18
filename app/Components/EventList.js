@@ -5,6 +5,7 @@ import {
   FlatList,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import { logTelemetry } from '../common/Log';
 
 import EventRow from './EventRow';
 
@@ -30,6 +31,36 @@ const styles = StyleSheet.create({
 });
 
 class EventList extends Component {
+  componentDidMount() {
+    logTelemetry('EventList.Load');
+  }
+
+  /**
+   * Called when the end of the list is reached
+   */
+  _onEndReached = () => {
+    logTelemetry('EventList.End');
+  }
+
+  /**
+   * Called to refresh list
+   */
+  _refresh = () => {
+    this.props.refresh(this.props.schoolId);
+    logTelemetry('EventList.Refresh');
+  }
+
+  /**
+   * Called when a list item is pressed
+   */
+  _onEventPress = (event) => {
+    this.props.onPress(event.item.id, event.item.eventName);
+    logTelemetry('EventList.Click', {
+      id: event.item.id,
+      name: event.item.eventName,
+    });
+  }
+
   isRefreshing = () => {
     if (this.props.isFetching === true) {
       return true;
@@ -44,7 +75,7 @@ class EventList extends Component {
   renderItem = event => (
     <View style={styles.items} >
       <EventRow
-        onPress={() => this.props.onPress(event.item.id, event.item.eventName)}
+        onPress={() => this._onEventPress(event)}
         event={event.item}
       />
     </View>
@@ -57,8 +88,9 @@ class EventList extends Component {
           renderItem={this.renderItem}
           keyExtractor={event => event.id}
           ItemSeparatorComponent={this.renderSeparator}
-          onRefresh={() => this.props.refresh(this.props.schoolId)}
+          onRefresh={this._refresh}
           refreshing={this.isRefreshing()}
+          onEndReached={this._onEndReached}
         />
       </View>
     );

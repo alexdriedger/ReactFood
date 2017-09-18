@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import moment from 'moment';
 import PropTypes from 'prop-types';
+import { logTelemetry } from '../common/Log';
 
 import QuickInfoRow from '../Components/QuickInfoRow';
 import FacebookButton from '../Components/FacebookButton';
@@ -77,12 +78,22 @@ const styles = StyleSheet.create({
 });
 
 class EventDetail extends Component {
+  componentDidMount() {
+    logTelemetry('EventDetail.Load', { ...this._baseTelemetry });
+  }
+
+  _baseTelemetry = {
+    id: this.props.event.id,
+    name: this.props.event.eventName,
+  };
+
   openFBLink = (id) => {
     let url = 'fb://event/'.concat(id);
     Linking.openURL(url).catch(() => {
       url = 'https://www.facebook.com/events/'.concat(id);
       Linking.openURL(url).catch(() => console.log('Could not open facebook event'));
     });
+    logTelemetry('EventDetail.FBLink.Click', { ...this._baseTelemetry });
   }
   render() {
     const {
@@ -110,12 +121,18 @@ class EventDetail extends Component {
             iconSize={30}
             topText={moment(event.startTime).format('ddd, MMM Do [at] h:mm a [-] ') + moment(event.endTime).format('h:mm a')}
             bottomText={moment(event.startTime).fromNow()}
+            onPress={() => {}}
           />
           <QuickInfoRow
             iconName={'location-on'}
             iconSize={30}
             topText={event.locationName}
             bottomText={event.address}
+            onPress={() => logTelemetry('EventDetail.MapRow.Click', {
+              ...this._baseTelemetry,
+              locationName: event.locationName,
+              address: event.address,
+            })}
           />
         </View>
         <FacebookButton

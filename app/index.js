@@ -8,7 +8,7 @@ import Crashes from 'mobile-center-crashes';
 
 import { RootStack } from './nav/routers';
 import rootReducer from './reducers/EventReducer';
-import { logTelemetry, SEVERITY } from './common/Log';
+import { logTelemetry } from './common/Log';
 
 // TODO : DELETE THIS
 import * as actions from './actions/APIActions';
@@ -32,7 +32,7 @@ class App extends Component {
     await Analytics.setEnabled(!__DEV__);
     await Crashes.setEnabled(!__DEV__);
 
-    logTelemetry('App opened', SEVERITY.GENERAL);
+    logTelemetry('App.Open');
   }
 
   render() {

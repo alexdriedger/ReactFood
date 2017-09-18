@@ -5,6 +5,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import { logTelemetry } from '../common/Log';
 
 const styles = StyleSheet.create({
   container: {
@@ -42,7 +43,10 @@ class EventDescriptionText extends Component {
     return (
       <Text
         style={[styles.descriptionText, styles.moreInfoText]}
-        onPress={() => this.setState({ fullText: true })}
+        onPress={() => {
+          this.setState({ fullText: true });
+          logTelemetry('EventDetail.SeeMore.Click');
+        }}
       >See More</Text>
     );
   }

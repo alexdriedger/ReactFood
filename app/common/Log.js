@@ -44,19 +44,19 @@ function _logEvent(description, destination, severity, properties) {
 /**
  * Logs an event to the telemetry service
  * @param {string} description of event.
- * @param {SEVERITY} severity of event. One of SEVERITY
  * @param {*} properties of event. Limited to 5 key, value pairs. Optional
+ * @param {SEVERITY} severity of event. One of SEVERITY
  */
-export function logTelemetry(description, severity, properties) {
+export function logTelemetry(description, properties, severity = SEVERITY.GENERAL) {
   _logEvent(description, DESTINATIONS.TELEMETRY, severity, properties);
 }
 
 /**
  * Logs an event to the console for developers
  * @param {string} description of event.
- * @param {SEVERITY} severity of event. One of SEVERITY
  * @param {*} properties of event. Optional.
+ * @param {SEVERITY} severity of event. One of SEVERITY
  */
-export function logDev(description, severity, properties) {
+export function logDev(description, properties, severity = SEVERITY.GENERAL) {
   _logEvent(description, DESTINATIONS.DEV, severity, properties);
 }
