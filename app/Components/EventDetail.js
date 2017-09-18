@@ -121,7 +121,6 @@ class EventDetail extends Component {
             iconSize={30}
             topText={moment(event.startTime).format('ddd, MMM Do [at] h:mm a [-] ') + moment(event.endTime).format('h:mm a')}
             bottomText={moment(event.startTime).fromNow()}
-            onPress={() => {}}
           />
           <QuickInfoRow
             iconName={'location-on'}

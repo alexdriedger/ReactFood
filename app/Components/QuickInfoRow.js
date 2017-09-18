@@ -62,7 +62,11 @@ QuickInfoRow.propTypes = {
   iconSize: PropTypes.number.isRequired,
   topText: PropTypes.string.isRequired,
   bottomText: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired,
+  onPress: PropTypes.func,
+};
+
+QuickInfoRow.defaultProps = {
+  onPress: () => {},
 };
 
 export default QuickInfoRow;
