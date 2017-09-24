@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     alignSelf: 'stretch',
-    height: 280,
   },
   image: {
     height: 200,
@@ -22,6 +21,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 1,
     backgroundColor: 'white',
+    height: 80,
   },
   dateContainer: {
     flex: 1,
@@ -54,6 +54,20 @@ const styles = StyleSheet.create({
 });
 
 class EventRow extends Component {
+
+  _renderEventImage = () => {
+    const { image } = this.props.event;
+    if (image === undefined) {
+      return null;
+    }
+    return (
+      <Image
+        style={styles.image}
+        source={{ uri: image }}
+      />
+    );
+  }
+
   render() {
     const { event } = this.props;
     return (
@@ -62,10 +76,7 @@ class EventRow extends Component {
         underlayColor={'transparent'}
       >
         <View style={styles.container}>
-          <Image
-            style={styles.image}
-            source={{ uri: event.image }}
-          />
+          {this._renderEventImage()}
           <View style={styles.infoContainer}>
             <View style={styles.dateContainer}>
               <Text

@@ -34,7 +34,7 @@ export const RootStack = StackNavigator({
   RootScreen: {
     screen: AllEvents,
     navigationOptions: {
-      title: 'UBC Feed Me',
+      title: 'UBC',
     },
   },
   EventDetail: {

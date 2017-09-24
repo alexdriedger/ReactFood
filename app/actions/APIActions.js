@@ -1,5 +1,6 @@
 import * as actions from './ActionTypes';
 import * as CONSTANTS from '../common/Constants';
+import { logTelemetry } from '../common/Log';
 
 export function selectSchool(school) {
   return {
@@ -31,6 +32,13 @@ export function receiveEvents(school, json) {
   };
 }
 
+export function receiveEventsFailure(error) {
+  return {
+    type: actions.RECEIVE_EVENTS_FAILURE,
+    err: error,
+  };
+}
+
 export function fetchEvents(school) {
   return function (dispatch) {
     dispatch(requestEvents(school));
@@ -39,7 +47,17 @@ export function fetchEvents(school) {
         ...CONSTANTS.API_AUTH_HEADER,
       },
     })
-    .then(response => response.json())
-    .then(json => dispatch(receiveEvents(school, json)));
+    .then(
+      response => response.json(),
+      (error) => {
+        dispatch(receiveEventsFailure(error));
+        logTelemetry('API.Events.Fail');
+        throw error;
+      },
+    )
+    .then(
+      json => dispatch(receiveEvents(school, json)),
+      () => {}, // API call failed, do not process events
+    );
   };
 }

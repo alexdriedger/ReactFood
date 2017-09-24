@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -46,10 +47,6 @@
 		E01286EC7B4C4CCAAF51D49A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A77C0DF6FB764E5CB993581E /* MaterialCommunityIcons.ttf */; };
 		E606305805DE448FB4D11D4D /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E07A74AF559D4E3AABF4866E /* MaterialIcons.ttf */; };
 		F72FEC3E2841406D9CC5A953 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B1D94288BC43778164E8C3 /* Octicons.ttf */; };
-		B118B5F1004943AC867F419D /* libRNMobileCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29DB75DECD5C4F50998E4F6A /* libRNMobileCenter.a */; };
-		8D6F462484FC4CC6AE8FEA81 /* MobileCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8B469F9A97854985B6F49BBB /* MobileCenter-Config.plist */; };
-		56904CAD6D26400B8F436B1B /* libRNAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DEE467EBAC4E799A7CEEC4 /* libRNAnalytics.a */; };
-		E775EB8B6E9B44EA995C8E9F /* libRNCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E1DEDA230A4F05B1D8EE63 /* libRNCrashes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -302,13 +299,6 @@
 		DF2A034BEE31423A8AF8A29E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		E07A74AF559D4E3AABF4866E /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		E2D2AEA66A4C40EF81E7ACD5 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		77E15FABA0164D01BCDB4CBE /* RNMobileCenter.xcodeproj */ = {isa = PBXFileReference; name = "RNMobileCenter.xcodeproj"; path = "../node_modules/mobile-center/ios/RNMobileCenter.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		29DB75DECD5C4F50998E4F6A /* libRNMobileCenter.a */ = {isa = PBXFileReference; name = "libRNMobileCenter.a"; path = "libRNMobileCenter.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		8B469F9A97854985B6F49BBB /* MobileCenter-Config.plist */ = {isa = PBXFileReference; name = "MobileCenter-Config.plist"; path = "Scavenge/MobileCenter-Config.plist"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = text.plist.xml; explicitFileType = undefined; includeInIndex = 0; };
-		98E86D412C3F47EBBC056F1A /* RNAnalytics.xcodeproj */ = {isa = PBXFileReference; name = "RNAnalytics.xcodeproj"; path = "../node_modules/mobile-center-analytics/ios/RNAnalytics.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		F3DEE467EBAC4E799A7CEEC4 /* libRNAnalytics.a */ = {isa = PBXFileReference; name = "libRNAnalytics.a"; path = "libRNAnalytics.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		1571A03C7D84496D949472D8 /* RNCrashes.xcodeproj */ = {isa = PBXFileReference; name = "RNCrashes.xcodeproj"; path = "../node_modules/mobile-center-crashes/ios/RNCrashes.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		F4E1DEDA230A4F05B1D8EE63 /* libRNCrashes.a */ = {isa = PBXFileReference; name = "libRNCrashes.a"; path = "libRNCrashes.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,9 +326,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				62AE27271EC64334A4756460 /* libRNVectorIcons.a in Frameworks */,
-				B118B5F1004943AC867F419D /* libRNMobileCenter.a in Frameworks */,
-				56904CAD6D26400B8F436B1B /* libRNAnalytics.a in Frameworks */,
-				E775EB8B6E9B44EA995C8E9F /* libRNCrashes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,9 +495,6 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				DB7BE9837E3044D783C4EF91 /* RNVectorIcons.xcodeproj */,
-				77E15FABA0164D01BCDB4CBE /* RNMobileCenter.xcodeproj */,
-				98E86D412C3F47EBBC056F1A /* RNAnalytics.xcodeproj */,
-				1571A03C7D84496D949472D8 /* RNCrashes.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -532,7 +516,6 @@
 				00E356EF1AD99517003FC87E /* ScavengeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				A8F83D3328594C0B9F2B7E85 /* Resources */,
-				8B469F9A97854985B6F49BBB /* MobileCenter-Config.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -971,7 +954,6 @@
 				F72FEC3E2841406D9CC5A953 /* Octicons.ttf in Resources */,
 				D8B28E95A2DF4EA290744AD6 /* SimpleLineIcons.ttf in Resources */,
 				6AFC794774214925A42BDAF1 /* Zocial.ttf in Resources */,
-				8D6F462484FC4CC6AE8FEA81 /* MobileCenter-Config.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1099,18 +1081,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)\..\node_modules\mobile-center\ios\RNMobileCenter",
-					"$(SRCROOT)\..\node_modules\mobile-center-analytics\ios\RNAnalytics",
-					"$(SRCROOT)\..\node_modules\mobile-center-crashes\ios\RNCrashes",
 				);
 				INFOPLIST_FILE = ScavengeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1133,18 +1109,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)\..\node_modules\mobile-center\ios\RNMobileCenter",
-					"$(SRCROOT)\..\node_modules\mobile-center-analytics\ios\RNAnalytics",
-					"$(SRCROOT)\..\node_modules\mobile-center-crashes\ios\RNCrashes",
 				);
 				INFOPLIST_FILE = ScavengeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1169,9 +1139,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)\..\node_modules\mobile-center\ios\RNMobileCenter",
-					"$(SRCROOT)\..\node_modules\mobile-center-analytics\ios\RNAnalytics",
-					"$(SRCROOT)\..\node_modules\mobile-center-crashes\ios\RNCrashes",
 				);
 				INFOPLIST_FILE = Scavenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1196,9 +1163,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)\..\node_modules\mobile-center\ios\RNMobileCenter",
-					"$(SRCROOT)\..\node_modules\mobile-center-analytics\ios\RNAnalytics",
-					"$(SRCROOT)\..\node_modules\mobile-center-crashes\ios\RNCrashes",
 				);
 				INFOPLIST_FILE = Scavenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1230,17 +1194,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)\..\node_modules\mobile-center\ios\RNMobileCenter",
-					"$(SRCROOT)\..\node_modules\mobile-center-analytics\ios\RNAnalytics",
-					"$(SRCROOT)\..\node_modules\mobile-center-crashes\ios\RNCrashes",
 				);
 				INFOPLIST_FILE = "Scavenge-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1270,17 +1228,11 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
-					"$(SRCROOT)\..\node_modules\mobile-center\ios\RNMobileCenter",
-					"$(SRCROOT)\..\node_modules\mobile-center-analytics\ios\RNAnalytics",
-					"$(SRCROOT)\..\node_modules\mobile-center-crashes\ios\RNCrashes",
 				);
 				INFOPLIST_FILE = "Scavenge-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1311,9 +1263,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Scavenge-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1338,9 +1287,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Scavenge-tvOSTests";
