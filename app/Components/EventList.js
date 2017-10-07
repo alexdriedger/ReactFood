@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
 
 class EventList extends Component {
   componentDidMount() {
+    this.props.refresh(this.props.schoolId);
     logTelemetry('EventList.Load');
   }
 
