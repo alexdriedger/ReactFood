@@ -42,11 +42,6 @@ class App extends Component {
     });
   }
   async componentDidMount() {
-    // TODO : SELECT SCHOOL IN CORRECT PLACE
-    // store.dispatch(actions.selectSchool(1));
-    // TODO : FETCH EVENTS FOR SCHOOL BASED ON STATE
-    // store.dispatch(actions.fetchEvents(1));
-
     // Turn analytics and crashes on in production
     await Analytics.setEnabled(!__DEV__);
     await Crashes.setEnabled(!__DEV__);
