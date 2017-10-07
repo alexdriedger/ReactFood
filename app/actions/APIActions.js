@@ -1,5 +1,6 @@
 import * as actions from './ActionTypes';
 import * as CONSTANTS from '../common/Constants';
+import { logTelemetry } from '../common/Log';
 
 export function selectSchool(school) {
   return {
@@ -50,6 +51,7 @@ export function fetchEvents(school) {
       response => response.json(),
       (error) => {
         dispatch(receiveEventsFailure(error));
+        logTelemetry('API.Events.Fail');
         throw error;
       },
     )

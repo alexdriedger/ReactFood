@@ -5,10 +5,13 @@ import logger from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 import { persistStore, autoRehydrate } from 'redux-persist';
 import { AsyncStorage } from 'react-native';
+import Analytics from 'mobile-center-analytics';
+import Crashes from 'mobile-center-crashes';
 
 import { RootStack } from './nav/routers';
 import rootReducer from './reducers/EventReducer';
 import SplashPage from './Components/Pages/SplashPage';
+import { logTelemetry } from './common/Log';
 
 // TODO : DELETE THIS
 import * as actions from './actions/APIActions';
@@ -38,12 +41,19 @@ class App extends Component {
       this.setState({ rehydrated: true });
     });
   }
-  componentDidMount() {
+  async componentDidMount() {
     // TODO : SELECT SCHOOL IN CORRECT PLACE
     // store.dispatch(actions.selectSchool(1));
     // TODO : FETCH EVENTS FOR SCHOOL BASED ON STATE
     // store.dispatch(actions.fetchEvents(1));
+
+    // Turn analytics and crashes on in production
+    await Analytics.setEnabled(!__DEV__);
+    await Crashes.setEnabled(!__DEV__);
+
+    logTelemetry('App.Open');
   }
+
   render() {
     if (!this.state.rehydrated) {
       return (

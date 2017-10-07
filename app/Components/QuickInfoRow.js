@@ -3,6 +3,7 @@ import {
   View,
   Text,
   StyleSheet,
+  TouchableWithoutFeedback,
 } from 'react-native';
 import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -36,19 +37,22 @@ class QuickInfoRow extends Component {
       iconSize,
       topText,
       bottomText,
+      onPress,
     } = this.props;
     return (
-      <View style={styles.container}>
-        <Icon
-          name={iconName}
-          size={iconSize}
-          color={'grey'}
-        />
-        <View style={styles.textContainer}>
-          <Text style={styles.topText}>{topText}</Text>
-          <Text style={styles.bottomText}>{bottomText}</Text>
+      <TouchableWithoutFeedback onPress={onPress}>
+        <View style={styles.container}>
+          <Icon
+            name={iconName}
+            size={iconSize}
+            color={'grey'}
+          />
+          <View style={styles.textContainer}>
+            <Text style={styles.topText}>{topText}</Text>
+            <Text style={styles.bottomText}>{bottomText}</Text>
+          </View>
         </View>
-      </View>
+      </TouchableWithoutFeedback>
     );
   }
 }
@@ -58,6 +62,11 @@ QuickInfoRow.propTypes = {
   iconSize: PropTypes.number.isRequired,
   topText: PropTypes.string.isRequired,
   bottomText: PropTypes.string.isRequired,
+  onPress: PropTypes.func,
+};
+
+QuickInfoRow.defaultProps = {
+  onPress: () => {},
 };
 
 export default QuickInfoRow;

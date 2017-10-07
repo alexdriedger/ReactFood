@@ -9,9 +9,11 @@ import {
 } from 'react-native';
 import moment from 'moment';
 import PropTypes from 'prop-types';
+import { logTelemetry } from '../common/Log';
 
 import QuickInfoRow from '../Components/QuickInfoRow';
 import FacebookButton from '../Components/FacebookButton';
+import EventDescriptionText from './EventDescriptionText';
 
 const styles = StyleSheet.create({
   container: {
@@ -69,19 +71,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     padding: 8,
   },
-  descriptionContainer: {
-    padding: 8,
-  },
-  descriptionTitle: {
-    fontWeight: 'bold',
-    fontSize: 14,
-    color: 'black',
-  },
-  descriptionText: {
-    fontSize: 13,
-    textAlign: 'justify',
-    color: 'black',
-  },
   seperator: {
     height: 12,
     backgroundColor: '#CED0CE',
@@ -89,12 +78,22 @@ const styles = StyleSheet.create({
 });
 
 class EventDetail extends Component {
+  componentDidMount() {
+    logTelemetry('EventDetail.Load', { ...this._baseTelemetry });
+  }
+
+  _baseTelemetry = {
+    id: this.props.event.id,
+    name: this.props.event.eventName,
+  };
+
   openFBLink = (id) => {
     let url = 'fb://event/'.concat(id);
     Linking.openURL(url).catch(() => {
       url = 'https://www.facebook.com/events/'.concat(id);
       Linking.openURL(url).catch(() => console.log('Could not open facebook event'));
     });
+    logTelemetry('EventDetail.FBLink.Click', { ...this._baseTelemetry });
   }
   render() {
     const {
@@ -128,6 +127,11 @@ class EventDetail extends Component {
             iconSize={30}
             topText={event.locationName}
             bottomText={event.address}
+            onPress={() => logTelemetry('EventDetail.MapRow.Click', {
+              ...this._baseTelemetry,
+              locationName: event.locationName,
+              address: event.address,
+            })}
           />
         </View>
         <FacebookButton
@@ -137,10 +141,9 @@ class EventDetail extends Component {
         <View
           style={styles.seperator}
         />
-        <View style={styles.descriptionContainer}>
-          <Text style={styles.descriptionTitle}>Description</Text>
-          <Text style={styles.descriptionText}>{event.description}</Text>
-        </View>
+        <EventDescriptionText
+          description={event.description}
+        />
       </ScrollView>
     );
   }

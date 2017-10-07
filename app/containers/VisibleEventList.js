@@ -4,13 +4,25 @@ import moment from 'moment';
 import EventList from '../Components/EventList';
 import * as actions from '../actions/APIActions';
 
-const getCorrectProps = (state, id) => ({
-  id: state.events.byId[id].id,
-  eventName: state.events.byId[id].name,
-  image: state.events.byId[id].cover.source,
-  startTime: state.events.byId[id].start_time,
-  locationName: state.events.byId[id].place.name,
-});
+const getCorrectProps = (state, id) => {
+  // Set default values if location and/or image does not exist
+  const {
+    place: {
+      name: locationName = '',
+    } = {},
+    cover: {
+      source: image = undefined,
+    } = {},
+  } = state.events.byId[id];
+
+  return {
+    id: state.events.byId[id].id,
+    eventName: state.events.byId[id].name,
+    image,
+    startTime: state.events.byId[id].start_time,
+    locationName,
+  };
+};
 
 /**
  * Checks if event is in the future
@@ -18,7 +30,7 @@ const getCorrectProps = (state, id) => ({
  * @param {string} id of the event
  */
 const isFutureEvent = (state, id) => {
-  const eventStartTime = moment(state.events.byId[id].end_time).valueOf();
+  const eventStartTime = moment(state.events.byId[id].end_time).unix();
   const currentTime = moment().unix();
 
   return eventStartTime > currentTime;
