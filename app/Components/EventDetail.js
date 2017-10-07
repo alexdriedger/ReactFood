@@ -6,6 +6,7 @@ import {
   Image,
   ScrollView,
   Linking,
+  Platform,
 } from 'react-native';
 import moment from 'moment';
 import PropTypes from 'prop-types';
@@ -67,8 +68,6 @@ const styles = StyleSheet.create({
   },
   quickInfoContainer: {
     flexDirection: 'column',
-    borderColor: 'gainsboro',
-    borderBottomWidth: 1,
     padding: 8,
   },
   seperator: {
@@ -88,6 +87,7 @@ class EventDetail extends Component {
   };
 
   openFBLink = (id) => {
+    // ONLY WORKS ON ANDROID
     let url = 'fb://event/'.concat(id);
     Linking.openURL(url).catch(() => {
       url = 'https://www.facebook.com/events/'.concat(id);
@@ -95,6 +95,20 @@ class EventDetail extends Component {
     });
     logTelemetry('EventDetail.FBLink.Click', { ...this._baseTelemetry });
   }
+
+  _renderFBButton = id => Platform.select({
+    // TODO : FIND CORRECT IOS LINK
+    // As a workout to the event not opening corretly on FB,
+    // do not render a button to go to FB on iOS
+    ios: null,
+    android: (
+      <FacebookButton
+        onPress={() => this.openFBLink(id)}
+        text={'Event'}
+      />
+    ),
+  })
+
   render() {
     const {
       event,
@@ -134,10 +148,7 @@ class EventDetail extends Component {
             })}
           />
         </View>
-        <FacebookButton
-          onPress={() => this.openFBLink(event.id)}
-          text={'Event'}
-        />
+        {this._renderFBButton(event.id)}
         <View
           style={styles.seperator}
         />
