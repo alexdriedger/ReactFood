@@ -7,94 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B09757954816102089B7BAEA1B45F31 /* Pods-ReactFood-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E1CC408D1BB919C5DFC8E37636B9E4 /* Pods-ReactFood-dummy.m */; };
-		4C502BC598F14DA868FA9B8C7F306F4F /* Pods-ReactFood-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F903F239DF47B6A14FA782D59F2022 /* Pods-ReactFood-tvOS-dummy.m */; };
-		6DB9F84C991E8E38F24B3A228DD6D812 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		767A25A99A7D68CA3EF297D19B1B54D6 /* Pods-ReactFoodTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB4BA5CB9E55691BC400D47B936D251 /* Pods-ReactFoodTests-dummy.m */; };
-		80AEDA306C304D6CB8D4415BB7EF734C /* Pods-ReactFood-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF9D7D3699322A4F7D6DCC52EADB42E /* Pods-ReactFood-tvOSTests-dummy.m */; };
-		B0B8A7E7471499A19F3790EE2BC8DAEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
-		B3AF4EF70C2C76755CACE91C58063D65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
-		F94EF8A0B9B052575D037A4ACA51662A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		2C7E713DA6F9907CCD1DAB9F582D7097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
+		3960E49B0FCF4FFF34D85E9D7B38DF55 /* Pods-Scavenge-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A44DFCDA67FAB5C0EB5AE5E8E4F612D9 /* Pods-Scavenge-tvOS-dummy.m */; };
+		7156E721FAE446653C6DCF294DA6DB8A /* Pods-Scavenge-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 105AE438896C8F690CB05D648316563F /* Pods-Scavenge-dummy.m */; };
+		8B9E18249D95BC42B1250BBCA723B3E4 /* Pods-ScavengeTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DDD78F61249B49CA4FB19A5FF1AC30 /* Pods-ScavengeTests-dummy.m */; };
+		90787E7655CCF117D50A51A2A863A509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		9B2C326060E54D54E11836B80DF87F2E /* Pods-Scavenge-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7E9551A1BB634D35965E80EBF56A8E /* Pods-Scavenge-tvOSTests-dummy.m */; };
+		C5EB0E4A19855578706740024B13E0D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
+		FF55CBBE1F30097D25050B86CCCF9B0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03C357163D1725C44CDFE242127E243E /* Pods-ReactFood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFood.debug.xcconfig"; sourceTree = "<group>"; };
-		047CD68D6F298B0672D7208CDED37A93 /* Pods-ReactFood-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFood-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		107021D98F295CE4917583E278F53F88 /* libPods-ReactFood.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactFood.a"; path = "libPods-ReactFood.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10E1CC408D1BB919C5DFC8E37636B9E4 /* Pods-ReactFood-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactFood-dummy.m"; sourceTree = "<group>"; };
+		0B476BA75D9CBB7118BB00DCF104FAC7 /* Pods-Scavenge-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scavenge-frameworks.sh"; sourceTree = "<group>"; };
+		105AE438896C8F690CB05D648316563F /* Pods-Scavenge-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Scavenge-dummy.m"; sourceTree = "<group>"; };
+		1EB1D44D214A4875503934FF4C08D7E2 /* Pods-ScavengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScavengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F9E3C8A75DDAC74E49F7A0C6148C67A /* libPods-Scavenge-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Scavenge-tvOSTests.a"; path = "libPods-Scavenge-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20FA4023EA0DB6A594F2838C089464FE /* Pods-Scavenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scavenge.debug.xcconfig"; sourceTree = "<group>"; };
 		2788FEC11F8146F7275E65528605A55A /* MobileCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCenter.framework; path = "MobileCenter-SDK-Apple/iOS/MobileCenter.framework"; sourceTree = "<group>"; };
+		2B735945A6909BB39B20AEFAD3BA8966 /* libPods-Scavenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Scavenge.a"; path = "libPods-Scavenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B7E9551A1BB634D35965E80EBF56A8E /* Pods-Scavenge-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Scavenge-tvOSTests-dummy.m"; sourceTree = "<group>"; };
 		2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		30227CF5823D2E0CD070A707917C2B38 /* Pods-ReactFood-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFood-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		3518A75519C4CBEA245A881813939068 /* libPods-ReactFood-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactFood-tvOSTests.a"; path = "libPods-ReactFood-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3955EB8A9FA73B3FE271E415D871A857 /* Pods-ReactFood-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactFood-acknowledgements.plist"; sourceTree = "<group>"; };
-		3CF9D7D3699322A4F7D6DCC52EADB42E /* Pods-ReactFood-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactFood-tvOSTests-dummy.m"; sourceTree = "<group>"; };
-		4E8F2C6CF19AB036BD35B7912BADF73F /* Pods-ReactFood-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFood-frameworks.sh"; sourceTree = "<group>"; };
-		5156C69F677084090492336C45D49183 /* Pods-ReactFood-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFood-tvOSTests-resources.sh"; sourceTree = "<group>"; };
-		53BFF9B39963B734D4E4C619C7465447 /* Pods-ReactFood-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactFood-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		362E820CAB18D856D8C48A3BA8359E12 /* Pods-Scavenge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scavenge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3B2D4B57202D37FF8FFEC599DE7D67E3 /* Pods-ScavengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScavengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B8A17A176A1C6F7E3C0AC41AAF4A1BB /* Pods-Scavenge-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Scavenge-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3EC60593FD5C32ECCB3C9F565227F9CA /* Pods-Scavenge-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scavenge-tvOSTests-resources.sh"; sourceTree = "<group>"; };
+		46BA90E57B32942EE6735BBFB33EB79B /* Pods-Scavenge-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scavenge-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
+		53CF3B2ACE6FC3B53C3D5B1B5F7029D2 /* Pods-Scavenge-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scavenge-tvOS-frameworks.sh"; sourceTree = "<group>"; };
 		572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		57F7C642ACB459F525DBF3E4078111F7 /* libPods-ReactFoodTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactFoodTests.a"; path = "libPods-ReactFoodTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE5108C7A5A0159A3CF8845BF993855 /* Pods-ScavengeTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScavengeTests-resources.sh"; sourceTree = "<group>"; };
 		66FDE8BD8CFFF7F9E330AC716F8CCE79 /* RNMobileCenterShared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RNMobileCenterShared.framework; path = RNMobileCenterShared/RNMobileCenterShared.framework; sourceTree = "<group>"; };
-		6C05D55AEAE07914CA177E7DFA7FAD6C /* libPods-ReactFood-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ReactFood-tvOS.a"; path = "libPods-ReactFood-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EB5BA22B60A129CE81A5F4E98531FC8 /* Pods-ReactFood-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFood-resources.sh"; sourceTree = "<group>"; };
-		6F29D19D734D1DEC29838BF4C6B7318A /* Pods-ReactFood-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFood-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		7A0868E542D4BE5DE308767750AA9B1E /* Pods-ReactFoodTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFoodTests-frameworks.sh"; sourceTree = "<group>"; };
-		7AC4F928AE389EC4F204786C03252CA6 /* Pods-ReactFood-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFood-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		88F903F239DF47B6A14FA782D59F2022 /* Pods-ReactFood-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactFood-tvOS-dummy.m"; sourceTree = "<group>"; };
-		934D0BBB278B2115C4C30CF818D30D45 /* Pods-ReactFood-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactFood-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		74708491CFD4A5FC93731F795D3880D5 /* Pods-ScavengeTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScavengeTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C8D2292BEDFD00885B2DA3F420765A2 /* Pods-Scavenge-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Scavenge-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A3F43740B6098A79A124B6031DB50BC /* Pods-Scavenge-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scavenge-resources.sh"; sourceTree = "<group>"; };
+		9395D86D8869E5195425145CA2661EDD /* Pods-Scavenge-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scavenge-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99B2A109A768DDB23AEF05267FEB3694 /* Pods-ReactFoodTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactFoodTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9B3F1D548F0EF48D59DE750F62C528E5 /* Pods-ReactFood-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFood-tvOS-frameworks.sh"; sourceTree = "<group>"; };
-		A5EE9FC1A3F20DC47BA929757282BC81 /* Pods-ReactFood-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFood-tvOS-resources.sh"; sourceTree = "<group>"; };
-		B16E6FEC1B657143F4E4C4D09825243B /* Pods-ReactFood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFood.release.xcconfig"; sourceTree = "<group>"; };
-		B29F0607EFDC226384E09369DF212591 /* Pods-ReactFoodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFoodTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC49B5435DAD1FE6619546EA5CABC5CE /* Pods-ReactFoodTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactFoodTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BDB4BA5CB9E55691BC400D47B936D251 /* Pods-ReactFoodTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ReactFoodTests-dummy.m"; sourceTree = "<group>"; };
-		BFDF4C61E3128D5F9A7ED3C7E97E1D60 /* Pods-ReactFood-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ReactFood-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C369247B0C232866ABAA92C37A0D4462 /* Pods-ReactFood-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFood-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		D3A13591882660B8981850C51720078D /* Pods-ReactFoodTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ReactFoodTests-resources.sh"; sourceTree = "<group>"; };
+		9C06B6F0F63EBEEEF8E3E95E5874DD61 /* Pods-Scavenge-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scavenge-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A0DE33E40FF7DB96C81BB6FBAE592D22 /* Pods-Scavenge-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Scavenge-tvOS-resources.sh"; sourceTree = "<group>"; };
+		A44DFCDA67FAB5C0EB5AE5E8E4F612D9 /* Pods-Scavenge-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Scavenge-tvOS-dummy.m"; sourceTree = "<group>"; };
+		A9DDD78F61249B49CA4FB19A5FF1AC30 /* Pods-ScavengeTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScavengeTests-dummy.m"; sourceTree = "<group>"; };
+		AC1060A3524A9EF754903F7595386045 /* Pods-Scavenge-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scavenge-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		B69683C559260736027ED610FD77B0A8 /* Pods-ScavengeTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ScavengeTests-frameworks.sh"; sourceTree = "<group>"; };
+		C045BECBB5255301BA79BF499715678E /* Pods-Scavenge-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scavenge-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6107B4521F681B35C4CE0A3A81BDC9 /* libPods-Scavenge-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Scavenge-tvOS.a"; path = "libPods-Scavenge-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50EA42194073043FB27B6DD94615087 /* Pods-Scavenge-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scavenge-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5C7CDE8B6C81556FECA91ECA2F585C1 /* MobileCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCenterCrashes.framework; path = "MobileCenter-SDK-Apple/iOS/MobileCenterCrashes.framework"; sourceTree = "<group>"; };
-		EC7A4E8E4A784E221934BB28005D0A2C /* Pods-ReactFood-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactFood-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EC82484D8018D1FB1C059BBBAF60C0F4 /* Pods-ReactFoodTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ReactFoodTests.release.xcconfig"; sourceTree = "<group>"; };
-		F32717838862F4AE46B4CF04EC40117E /* Pods-ReactFood-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ReactFood-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC8B3AF4239C859743FEC9CE83A9C230 /* Pods-ScavengeTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScavengeTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4A5A161FC8C2EB1634B94F0B992AA40 /* libPods-ScavengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ScavengeTests.a"; path = "libPods-ScavengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40BF06028E94AE26A839C62D8FEFEF7 /* Pods-Scavenge-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scavenge-acknowledgements.plist"; sourceTree = "<group>"; };
 		F6199D58EB18EAC74C922EDD40097F60 /* MobileCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCenterAnalytics.framework; path = "MobileCenter-SDK-Apple/iOS/MobileCenterAnalytics.framework"; sourceTree = "<group>"; };
+		FABF0A74616401E094CD10B48293BAEC /* Pods-Scavenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scavenge.release.xcconfig"; sourceTree = "<group>"; };
+		FC499DFF62D0220FEE7CBC636C68DC91 /* Pods-Scavenge-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Scavenge-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02058A706D279058115BAEB5A1C6E34D /* Frameworks */ = {
+		967D712982925B009DEEB88F2F235FC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB9F84C991E8E38F24B3A228DD6D812 /* Foundation.framework in Frameworks */,
+				C5EB0E4A19855578706740024B13E0D6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		27CEFAD0C030311236533D6FCD699E4D /* Frameworks */ = {
+		A8A12BE70207B7D9EB9AD6E951B9B3EB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0B8A7E7471499A19F3790EE2BC8DAEA /* Foundation.framework in Frameworks */,
+				FF55CBBE1F30097D25050B86CCCF9B0D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD1BDEF901F3DEED77A3500823A006E9 /* Frameworks */ = {
+		E99E777743E798D9AE81D3986E66E98A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3AF4EF70C2C76755CACE91C58063D65 /* Foundation.framework in Frameworks */,
+				90787E7655CCF117D50A51A2A863A509 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D073F95C8A82D7F464FBFC8C38B9C85A /* Frameworks */ = {
+		F90DA9F52EBD77EDA0974C194D336289 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F94EF8A0B9B052575D037A4ACA51662A /* Foundation.framework in Frameworks */,
+				2C7E713DA6F9907CCD1DAB9F582D7097 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BAE9671E26D9102C61E1E7135F000AA /* Pods-ScavengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				74708491CFD4A5FC93731F795D3880D5 /* Pods-ScavengeTests-acknowledgements.markdown */,
+				DC8B3AF4239C859743FEC9CE83A9C230 /* Pods-ScavengeTests-acknowledgements.plist */,
+				A9DDD78F61249B49CA4FB19A5FF1AC30 /* Pods-ScavengeTests-dummy.m */,
+				B69683C559260736027ED610FD77B0A8 /* Pods-ScavengeTests-frameworks.sh */,
+				5CE5108C7A5A0159A3CF8845BF993855 /* Pods-ScavengeTests-resources.sh */,
+				3B2D4B57202D37FF8FFEC599DE7D67E3 /* Pods-ScavengeTests.debug.xcconfig */,
+				1EB1D44D214A4875503934FF4C08D7E2 /* Pods-ScavengeTests.release.xcconfig */,
+			);
+			name = "Pods-ScavengeTests";
+			path = "Target Support Files/Pods-ScavengeTests";
+			sourceTree = "<group>";
+		};
 		0C8F650681EDBD4EE7B75937B83B734E /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,34 +126,30 @@
 			name = tvOS;
 			sourceTree = "<group>";
 		};
-		21DAD5652E77C706ABF478A371AE0516 /* Pods-ReactFood */ = {
+		252E6CECD4BB401268D92EE0E2104FCE /* Pods-Scavenge */ = {
 			isa = PBXGroup;
 			children = (
-				EC7A4E8E4A784E221934BB28005D0A2C /* Pods-ReactFood-acknowledgements.markdown */,
-				3955EB8A9FA73B3FE271E415D871A857 /* Pods-ReactFood-acknowledgements.plist */,
-				10E1CC408D1BB919C5DFC8E37636B9E4 /* Pods-ReactFood-dummy.m */,
-				4E8F2C6CF19AB036BD35B7912BADF73F /* Pods-ReactFood-frameworks.sh */,
-				6EB5BA22B60A129CE81A5F4E98531FC8 /* Pods-ReactFood-resources.sh */,
-				03C357163D1725C44CDFE242127E243E /* Pods-ReactFood.debug.xcconfig */,
-				B16E6FEC1B657143F4E4C4D09825243B /* Pods-ReactFood.release.xcconfig */,
+				7C8D2292BEDFD00885B2DA3F420765A2 /* Pods-Scavenge-acknowledgements.markdown */,
+				F40BF06028E94AE26A839C62D8FEFEF7 /* Pods-Scavenge-acknowledgements.plist */,
+				105AE438896C8F690CB05D648316563F /* Pods-Scavenge-dummy.m */,
+				0B476BA75D9CBB7118BB00DCF104FAC7 /* Pods-Scavenge-frameworks.sh */,
+				8A3F43740B6098A79A124B6031DB50BC /* Pods-Scavenge-resources.sh */,
+				20FA4023EA0DB6A594F2838C089464FE /* Pods-Scavenge.debug.xcconfig */,
+				FABF0A74616401E094CD10B48293BAEC /* Pods-Scavenge.release.xcconfig */,
 			);
-			name = "Pods-ReactFood";
-			path = "Target Support Files/Pods-ReactFood";
+			name = "Pods-Scavenge";
+			path = "Target Support Files/Pods-Scavenge";
 			sourceTree = "<group>";
 		};
-		583FED7C96941CE96C9FF009314D304E /* Pods-ReactFoodTests */ = {
+		4275E854262985D732CF0335F25B5D80 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				99B2A109A768DDB23AEF05267FEB3694 /* Pods-ReactFoodTests-acknowledgements.markdown */,
-				BC49B5435DAD1FE6619546EA5CABC5CE /* Pods-ReactFoodTests-acknowledgements.plist */,
-				BDB4BA5CB9E55691BC400D47B936D251 /* Pods-ReactFoodTests-dummy.m */,
-				7A0868E542D4BE5DE308767750AA9B1E /* Pods-ReactFoodTests-frameworks.sh */,
-				D3A13591882660B8981850C51720078D /* Pods-ReactFoodTests-resources.sh */,
-				B29F0607EFDC226384E09369DF212591 /* Pods-ReactFoodTests.debug.xcconfig */,
-				EC82484D8018D1FB1C059BBBAF60C0F4 /* Pods-ReactFoodTests.release.xcconfig */,
+				252E6CECD4BB401268D92EE0E2104FCE /* Pods-Scavenge */,
+				9D3AC1623221F3FCBEDCE763E3528764 /* Pods-Scavenge-tvOS */,
+				FD149240E56E1EADDB69ECC989207EE2 /* Pods-Scavenge-tvOSTests */,
+				0BAE9671E26D9102C61E1E7135F000AA /* Pods-ScavengeTests */,
 			);
-			name = "Pods-ReactFoodTests";
-			path = "Target Support Files/Pods-ReactFoodTests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		58996781A54EE964D7111D73083A18A5 /* iOS */ = {
@@ -171,8 +182,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				A42F72DC1D780481325DD00969B19BB6 /* Frameworks */,
 				BFBE4D750AD608E527628562FD3CE2A3 /* Pods */,
-				C601BF0E96ECD8343C18CC298F9545F6 /* Products */,
-				C2CAE8FD70BC42DB9684912C85AE6B59 /* Targets Support Files */,
+				F64BF69A801CDD44591579C2677FBACC /* Products */,
+				4275E854262985D732CF0335F25B5D80 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,6 +220,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D3AC1623221F3FCBEDCE763E3528764 /* Pods-Scavenge-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				3B8A17A176A1C6F7E3C0AC41AAF4A1BB /* Pods-Scavenge-tvOS-acknowledgements.markdown */,
+				AC1060A3524A9EF754903F7595386045 /* Pods-Scavenge-tvOS-acknowledgements.plist */,
+				A44DFCDA67FAB5C0EB5AE5E8E4F612D9 /* Pods-Scavenge-tvOS-dummy.m */,
+				53CF3B2ACE6FC3B53C3D5B1B5F7029D2 /* Pods-Scavenge-tvOS-frameworks.sh */,
+				A0DE33E40FF7DB96C81BB6FBAE592D22 /* Pods-Scavenge-tvOS-resources.sh */,
+				9C06B6F0F63EBEEEF8E3E95E5874DD61 /* Pods-Scavenge-tvOS.debug.xcconfig */,
+				362E820CAB18D856D8C48A3BA8359E12 /* Pods-Scavenge-tvOS.release.xcconfig */,
+			);
+			name = "Pods-Scavenge-tvOS";
+			path = "Target Support Files/Pods-Scavenge-tvOS";
+			sourceTree = "<group>";
+		};
 		A42F72DC1D780481325DD00969B19BB6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,43 +251,6 @@
 				92FB20EF272686758C16E3413C088C00 /* RNMobileCenterShared */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		C2CAE8FD70BC42DB9684912C85AE6B59 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				21DAD5652E77C706ABF478A371AE0516 /* Pods-ReactFood */,
-				D094F61ECFCA7777839899F0B19ED5A0 /* Pods-ReactFood-tvOS */,
-				D8BB6D8D07B86386BF724FA3FDFB1FF0 /* Pods-ReactFood-tvOSTests */,
-				583FED7C96941CE96C9FF009314D304E /* Pods-ReactFoodTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C601BF0E96ECD8343C18CC298F9545F6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				107021D98F295CE4917583E278F53F88 /* libPods-ReactFood.a */,
-				6C05D55AEAE07914CA177E7DFA7FAD6C /* libPods-ReactFood-tvOS.a */,
-				3518A75519C4CBEA245A881813939068 /* libPods-ReactFood-tvOSTests.a */,
-				57F7C642ACB459F525DBF3E4078111F7 /* libPods-ReactFoodTests.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D094F61ECFCA7777839899F0B19ED5A0 /* Pods-ReactFood-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				934D0BBB278B2115C4C30CF818D30D45 /* Pods-ReactFood-tvOS-acknowledgements.markdown */,
-				53BFF9B39963B734D4E4C619C7465447 /* Pods-ReactFood-tvOS-acknowledgements.plist */,
-				88F903F239DF47B6A14FA782D59F2022 /* Pods-ReactFood-tvOS-dummy.m */,
-				9B3F1D548F0EF48D59DE750F62C528E5 /* Pods-ReactFood-tvOS-frameworks.sh */,
-				A5EE9FC1A3F20DC47BA929757282BC81 /* Pods-ReactFood-tvOS-resources.sh */,
-				6F29D19D734D1DEC29838BF4C6B7318A /* Pods-ReactFood-tvOS.debug.xcconfig */,
-				7AC4F928AE389EC4F204786C03252CA6 /* Pods-ReactFood-tvOS.release.xcconfig */,
-			);
-			name = "Pods-ReactFood-tvOS";
-			path = "Target Support Files/Pods-ReactFood-tvOS";
 			sourceTree = "<group>";
 		};
 		D475BD27B7EA251F3A9187F2B27E749A /* MobileCenter */ = {
@@ -283,86 +272,97 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8BB6D8D07B86386BF724FA3FDFB1FF0 /* Pods-ReactFood-tvOSTests */ = {
+		F64BF69A801CDD44591579C2677FBACC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F32717838862F4AE46B4CF04EC40117E /* Pods-ReactFood-tvOSTests-acknowledgements.markdown */,
-				BFDF4C61E3128D5F9A7ED3C7E97E1D60 /* Pods-ReactFood-tvOSTests-acknowledgements.plist */,
-				3CF9D7D3699322A4F7D6DCC52EADB42E /* Pods-ReactFood-tvOSTests-dummy.m */,
-				C369247B0C232866ABAA92C37A0D4462 /* Pods-ReactFood-tvOSTests-frameworks.sh */,
-				5156C69F677084090492336C45D49183 /* Pods-ReactFood-tvOSTests-resources.sh */,
-				047CD68D6F298B0672D7208CDED37A93 /* Pods-ReactFood-tvOSTests.debug.xcconfig */,
-				30227CF5823D2E0CD070A707917C2B38 /* Pods-ReactFood-tvOSTests.release.xcconfig */,
+				2B735945A6909BB39B20AEFAD3BA8966 /* libPods-Scavenge.a */,
+				CB6107B4521F681B35C4CE0A3A81BDC9 /* libPods-Scavenge-tvOS.a */,
+				1F9E3C8A75DDAC74E49F7A0C6148C67A /* libPods-Scavenge-tvOSTests.a */,
+				E4A5A161FC8C2EB1634B94F0B992AA40 /* libPods-ScavengeTests.a */,
 			);
-			name = "Pods-ReactFood-tvOSTests";
-			path = "Target Support Files/Pods-ReactFood-tvOSTests";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD149240E56E1EADDB69ECC989207EE2 /* Pods-Scavenge-tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC499DFF62D0220FEE7CBC636C68DC91 /* Pods-Scavenge-tvOSTests-acknowledgements.markdown */,
+				9395D86D8869E5195425145CA2661EDD /* Pods-Scavenge-tvOSTests-acknowledgements.plist */,
+				2B7E9551A1BB634D35965E80EBF56A8E /* Pods-Scavenge-tvOSTests-dummy.m */,
+				46BA90E57B32942EE6735BBFB33EB79B /* Pods-Scavenge-tvOSTests-frameworks.sh */,
+				3EC60593FD5C32ECCB3C9F565227F9CA /* Pods-Scavenge-tvOSTests-resources.sh */,
+				C045BECBB5255301BA79BF499715678E /* Pods-Scavenge-tvOSTests.debug.xcconfig */,
+				D50EA42194073043FB27B6DD94615087 /* Pods-Scavenge-tvOSTests.release.xcconfig */,
+			);
+			name = "Pods-Scavenge-tvOSTests";
+			path = "Target Support Files/Pods-Scavenge-tvOSTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3194CE4DDEC58F13CA5445054E90024A /* Pods-ReactFood-tvOSTests */ = {
+		04FD78773839AB54697627185ACCAF24 /* Pods-Scavenge-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 084F2ABC713AABE68C0101FCA5A10D1B /* Build configuration list for PBXNativeTarget "Pods-ReactFood-tvOSTests" */;
+			buildConfigurationList = 2C867327B8281D13B302A174F4A67C13 /* Build configuration list for PBXNativeTarget "Pods-Scavenge-tvOSTests" */;
 			buildPhases = (
-				AEC369788DF9F04EAA13F0504669DF51 /* Sources */,
-				27CEFAD0C030311236533D6FCD699E4D /* Frameworks */,
+				C62976B0E2AE369AD9094475FD740DFA /* Sources */,
+				A8A12BE70207B7D9EB9AD6E951B9B3EB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ReactFood-tvOSTests";
-			productName = "Pods-ReactFood-tvOSTests";
-			productReference = 3518A75519C4CBEA245A881813939068 /* libPods-ReactFood-tvOSTests.a */;
+			name = "Pods-Scavenge-tvOSTests";
+			productName = "Pods-Scavenge-tvOSTests";
+			productReference = 1F9E3C8A75DDAC74E49F7A0C6148C67A /* libPods-Scavenge-tvOSTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		659920BD2DED65A7136EA7B3BB556165 /* Pods-ReactFoodTests */ = {
+		A3844C66E19CD45427E30A499C515848 /* Pods-Scavenge-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 25C62F0CA19F2E5E64C24C9DDE736A4C /* Build configuration list for PBXNativeTarget "Pods-ReactFoodTests" */;
+			buildConfigurationList = 7F8FF944903920F4834A3A9340329E65 /* Build configuration list for PBXNativeTarget "Pods-Scavenge-tvOS" */;
 			buildPhases = (
-				FD94D57ADD333799B8C570B488D9801E /* Sources */,
-				BD1BDEF901F3DEED77A3500823A006E9 /* Frameworks */,
+				80CF189E42A30FCE96EA171C51CA8488 /* Sources */,
+				F90DA9F52EBD77EDA0974C194D336289 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ReactFoodTests";
-			productName = "Pods-ReactFoodTests";
-			productReference = 57F7C642ACB459F525DBF3E4078111F7 /* libPods-ReactFoodTests.a */;
+			name = "Pods-Scavenge-tvOS";
+			productName = "Pods-Scavenge-tvOS";
+			productReference = CB6107B4521F681B35C4CE0A3A81BDC9 /* libPods-Scavenge-tvOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8B168C8082DA51833539BED4891F852D /* Pods-ReactFood-tvOS */ = {
+		E438F97FB041651E08081F1CE0A3ED68 /* Pods-Scavenge */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 49CF2AD27CD4E944AA1306C6DDB7F6EA /* Build configuration list for PBXNativeTarget "Pods-ReactFood-tvOS" */;
+			buildConfigurationList = AE1410B4BE3A50BEA60AA3FAAC2808EC /* Build configuration list for PBXNativeTarget "Pods-Scavenge" */;
 			buildPhases = (
-				EFE1EF591B62A281D4D712562CB80436 /* Sources */,
-				02058A706D279058115BAEB5A1C6E34D /* Frameworks */,
+				38B4F78177ACCB0A07C266508E88D7DF /* Sources */,
+				E99E777743E798D9AE81D3986E66E98A /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ReactFood-tvOS";
-			productName = "Pods-ReactFood-tvOS";
-			productReference = 6C05D55AEAE07914CA177E7DFA7FAD6C /* libPods-ReactFood-tvOS.a */;
+			name = "Pods-Scavenge";
+			productName = "Pods-Scavenge";
+			productReference = 2B735945A6909BB39B20AEFAD3BA8966 /* libPods-Scavenge.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F0BA933B80557F2CE43C9F11D91E779B /* Pods-ReactFood */ = {
+		F213C450EAC215F815B3D288DA89D56E /* Pods-ScavengeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E53445A82A712C7A3206F1AE86D3F9CD /* Build configuration list for PBXNativeTarget "Pods-ReactFood" */;
+			buildConfigurationList = 3FC63CD8DB4CE586DB99D05DDCD883AA /* Build configuration list for PBXNativeTarget "Pods-ScavengeTests" */;
 			buildPhases = (
-				E426B7331A12EC271760D38DBBC05844 /* Sources */,
-				D073F95C8A82D7F464FBFC8C38B9C85A /* Frameworks */,
+				69918F28E077C4123E2BDB3F9A96EE55 /* Sources */,
+				967D712982925B009DEEB88F2F235FC7 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-ReactFood";
-			productName = "Pods-ReactFood";
-			productReference = 107021D98F295CE4917583E278F53F88 /* libPods-ReactFood.a */;
+			name = "Pods-ScavengeTests";
+			productName = "Pods-ScavengeTests";
+			productReference = E4A5A161FC8C2EB1634B94F0B992AA40 /* libPods-ScavengeTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -382,48 +382,48 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C601BF0E96ECD8343C18CC298F9545F6 /* Products */;
+			productRefGroup = F64BF69A801CDD44591579C2677FBACC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F0BA933B80557F2CE43C9F11D91E779B /* Pods-ReactFood */,
-				8B168C8082DA51833539BED4891F852D /* Pods-ReactFood-tvOS */,
-				3194CE4DDEC58F13CA5445054E90024A /* Pods-ReactFood-tvOSTests */,
-				659920BD2DED65A7136EA7B3BB556165 /* Pods-ReactFoodTests */,
+				E438F97FB041651E08081F1CE0A3ED68 /* Pods-Scavenge */,
+				A3844C66E19CD45427E30A499C515848 /* Pods-Scavenge-tvOS */,
+				04FD78773839AB54697627185ACCAF24 /* Pods-Scavenge-tvOSTests */,
+				F213C450EAC215F815B3D288DA89D56E /* Pods-ScavengeTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AEC369788DF9F04EAA13F0504669DF51 /* Sources */ = {
+		38B4F78177ACCB0A07C266508E88D7DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80AEDA306C304D6CB8D4415BB7EF734C /* Pods-ReactFood-tvOSTests-dummy.m in Sources */,
+				7156E721FAE446653C6DCF294DA6DB8A /* Pods-Scavenge-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E426B7331A12EC271760D38DBBC05844 /* Sources */ = {
+		69918F28E077C4123E2BDB3F9A96EE55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B09757954816102089B7BAEA1B45F31 /* Pods-ReactFood-dummy.m in Sources */,
+				8B9E18249D95BC42B1250BBCA723B3E4 /* Pods-ScavengeTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFE1EF591B62A281D4D712562CB80436 /* Sources */ = {
+		80CF189E42A30FCE96EA171C51CA8488 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C502BC598F14DA868FA9B8C7F306F4F /* Pods-ReactFood-tvOS-dummy.m in Sources */,
+				3960E49B0FCF4FFF34D85E9D7B38DF55 /* Pods-Scavenge-tvOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD94D57ADD333799B8C570B488D9801E /* Sources */ = {
+		C62976B0E2AE369AD9094475FD740DFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				767A25A99A7D68CA3EF297D19B1B54D6 /* Pods-ReactFoodTests-dummy.m in Sources */,
+				9B2C326060E54D54E11836B80DF87F2E /* Pods-Scavenge-tvOSTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,9 +480,32 @@
 			};
 			name = Debug;
 		};
-		39434329090B512610224CBE24E0F397 /* Debug */ = {
+		57DD46EA3B10884D07A9CFA6C4D8C3B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B29F0607EFDC226384E09369DF212591 /* Pods-ReactFoodTests.debug.xcconfig */;
+			baseConfigurationReference = FABF0A74616401E094CD10B48293BAEC /* Pods-Scavenge.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5987FB92EF7518A2FB1B6C4D5EFCC506 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B2D4B57202D37FF8FFEC599DE7D67E3 /* Pods-ScavengeTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -503,55 +526,32 @@
 			};
 			name = Debug;
 		};
-		4FBC1DDF39DED0D8DFFC361C5222BFFF /* Debug */ = {
+		6CA0A95974CD9C30E6FD2575A6BF726E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F29D19D734D1DEC29838BF4C6B7318A /* Pods-ReactFood-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 1EB1D44D214A4875503934FF4C08D7E2 /* Pods-ScavengeTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
-			name = Debug;
+			name = Release;
 		};
-		58C3A4EDAC89A7FA07C453CAABBBBD2F /* Debug */ = {
+		79EDED9CD376A46375973130BC270B2E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 047CD68D6F298B0672D7208CDED37A93 /* Pods-ReactFood-tvOSTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		5B55BB0F195251D74A64007829E30679 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AC4F928AE389EC4F204786C03252CA6 /* Pods-ReactFood-tvOS.release.xcconfig */;
+			baseConfigurationReference = 362E820CAB18D856D8C48A3BA8359E12 /* Pods-Scavenge-tvOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -572,9 +572,32 @@
 			};
 			name = Release;
 		};
-		8FBD46A9C1EB28CCE055E43DDC503CB5 /* Release */ = {
+		A78DC22C9E1F579B8447547EC6CDDBA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 30227CF5823D2E0CD070A707917C2B38 /* Pods-ReactFood-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = C045BECBB5255301BA79BF499715678E /* Pods-Scavenge-tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		AF37A874EAE4919B8C2EA99A7D39E21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D50EA42194073043FB27B6DD94615087 /* Pods-Scavenge-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -640,9 +663,32 @@
 			};
 			name = Release;
 		};
-		E05551307142DD0FBDF2B68D6A0ED4C9 /* Debug */ = {
+		C9123A36F515E3C8F270127D5B0D7E78 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03C357163D1725C44CDFE242127E243E /* Pods-ReactFood.debug.xcconfig */;
+			baseConfigurationReference = 9C06B6F0F63EBEEEF8E3E95E5874DD61 /* Pods-Scavenge-tvOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		F1FFDD1701A3F3A7A085BA004E75C2EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FA4023EA0DB6A594F2838C089464FE /* Pods-Scavenge.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -663,69 +709,14 @@
 			};
 			name = Debug;
 		};
-		E74DCF9EB19B13B24BE126217FF5E9E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC82484D8018D1FB1C059BBBAF60C0F4 /* Pods-ReactFoodTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FAC5AE6B5679B83E401E76D4FB93B141 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B16E6FEC1B657143F4E4C4D09825243B /* Pods-ReactFood.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		084F2ABC713AABE68C0101FCA5A10D1B /* Build configuration list for PBXNativeTarget "Pods-ReactFood-tvOSTests" */ = {
+		2C867327B8281D13B302A174F4A67C13 /* Build configuration list for PBXNativeTarget "Pods-Scavenge-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				58C3A4EDAC89A7FA07C453CAABBBBD2F /* Debug */,
-				8FBD46A9C1EB28CCE055E43DDC503CB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		25C62F0CA19F2E5E64C24C9DDE736A4C /* Build configuration list for PBXNativeTarget "Pods-ReactFoodTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				39434329090B512610224CBE24E0F397 /* Debug */,
-				E74DCF9EB19B13B24BE126217FF5E9E7 /* Release */,
+				A78DC22C9E1F579B8447547EC6CDDBA8 /* Debug */,
+				AF37A874EAE4919B8C2EA99A7D39E21B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -739,20 +730,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		49CF2AD27CD4E944AA1306C6DDB7F6EA /* Build configuration list for PBXNativeTarget "Pods-ReactFood-tvOS" */ = {
+		3FC63CD8DB4CE586DB99D05DDCD883AA /* Build configuration list for PBXNativeTarget "Pods-ScavengeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4FBC1DDF39DED0D8DFFC361C5222BFFF /* Debug */,
-				5B55BB0F195251D74A64007829E30679 /* Release */,
+				5987FB92EF7518A2FB1B6C4D5EFCC506 /* Debug */,
+				6CA0A95974CD9C30E6FD2575A6BF726E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E53445A82A712C7A3206F1AE86D3F9CD /* Build configuration list for PBXNativeTarget "Pods-ReactFood" */ = {
+		7F8FF944903920F4834A3A9340329E65 /* Build configuration list for PBXNativeTarget "Pods-Scavenge-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E05551307142DD0FBDF2B68D6A0ED4C9 /* Debug */,
-				FAC5AE6B5679B83E401E76D4FB93B141 /* Release */,
+				C9123A36F515E3C8F270127D5B0D7E78 /* Debug */,
+				79EDED9CD376A46375973130BC270B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE1410B4BE3A50BEA60AA3FAAC2808EC /* Build configuration list for PBXNativeTarget "Pods-Scavenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FFDD1701A3F3A7A085BA004E75C2EF /* Debug */,
+				57DD46EA3B10884D07A9CFA6C4D8C3B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

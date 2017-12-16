@@ -1,31 +1,31 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'ReactFood' do
+target 'Scavenge' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for ReactFood
+  # Pods for Scavenge
   pod 'MobileCenter/Crashes', '~> 0.12.1'
   pod 'MobileCenter/Analytics', '~> 0.12.1'
   pod 'RNMobileCenterShared', '~> 0.9.0'
 
   
 
-  target 'ReactFoodTests' do
+  target 'ScavengeTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
 end
 
-target 'ReactFood-tvOS' do
+target 'Scavenge-tvOS' do
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
-  # Pods for ReactFood-tvOS
+  # Pods for Scavenge-tvOS
 
-  target 'ReactFood-tvOSTests' do
+  target 'Scavenge-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end
