@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -24,6 +25,7 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		1A44D0A9E70F482DB7273E84 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A37ED177E36D45C4B5978F8E /* EvilIcons.ttf */; };
 		1D5EEDEB375444CFAD7C85AC /* MobileCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = BED53A567DA2448DB6A9969D /* MobileCenter-Config.plist */; };
+		1F3DDC488ABE4DDDA3B308E9 /* libRNCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A608FE37E0364768AAB1B18B /* libRNCrashes.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -44,6 +46,7 @@
 		7BCBA56B50DB179872C9F3CB /* libPods-Scavenge-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2A0E54E840597310DD9A21 /* libPods-Scavenge-tvOS.a */; };
 		801F95B8C2844E939247D2DF /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFA98B6172514329BD324344 /* Foundation.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		94E491DD7CC5492B828AF5AA /* libRNAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D37A33F398A4943A86FDC9D /* libRNAnalytics.a */; };
 		C0896CF16F707C3A81DBC4C0 /* libPods-ScavengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC6456FC126DE0D988881C6 /* libPods-ScavengeTests.a */; };
 		CDE27192643748DBB5C10086 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7148314C8CC4E6DB5FE66C5 /* Entypo.ttf */; };
 		D8B28E95A2DF4EA290744AD6 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF2A034BEE31423A8AF8A29E /* SimpleLineIcons.ttf */; };
@@ -52,8 +55,6 @@
 		F18A0B3D68C686E900A1E39A /* libPods-Scavenge-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 769BEA31EB145EBC55DED461 /* libPods-Scavenge-tvOSTests.a */; };
 		F72FEC3E2841406D9CC5A953 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8B1D94288BC43778164E8C3 /* Octicons.ttf */; };
 		FF9ED6FC78854DBDA7D54FC6 /* libRNMobileCenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9515E5123FC54CC7BDA18746 /* libRNMobileCenter.a */; };
-		94E491DD7CC5492B828AF5AA /* libRNAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D37A33F398A4943A86FDC9D /* libRNAnalytics.a */; };
-		1F3DDC488ABE4DDDA3B308E9 /* libRNCrashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A608FE37E0364768AAB1B18B /* libRNCrashes.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,6 +261,27 @@
 			remoteGlobalIDString = 139D7E881E25C6D100323FB7;
 			remoteInfo = "double-conversion";
 		};
+		A9CD63621FE8F0BA00A2E5C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10953EB47954805AD272712 /* RNMobileCenter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C35AEC211EF91F9300931F0C;
+			remoteInfo = RNMobileCenter;
+		};
+		A9CD63671FE8F0BA00A2E5C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB87AFD660CD4127AA7847A4 /* RNAnalytics.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 548694001D8384E600E6685A;
+			remoteInfo = RNAnalytics;
+		};
+		A9CD636C1FE8F0BB00A2E5C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 822AA8F73AF74897A395D54D /* RNCrashes.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5419C2701D824AA700DDF3A1;
+			remoteInfo = RNCrashes;
+		};
 		A9D6118A1F29B25F005BAE74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DB7BE9837E3044D783C4EF91 /* RNVectorIcons.xcodeproj */;
@@ -300,12 +322,16 @@
 		769BEA31EB145EBC55DED461 /* libPods-Scavenge-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scavenge-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7D2A0E54E840597310DD9A21 /* libPods-Scavenge-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Scavenge-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		822AA8F73AF74897A395D54D /* RNCrashes.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCrashes.xcodeproj; path = "../node_modules/mobile-center-crashes/ios/RNCrashes.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		855BAE27B24B405AA5F2C33D /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		8D37A33F398A4943A86FDC9D /* libRNAnalytics.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNAnalytics.a; sourceTree = "<group>"; };
 		920BA5F483D82F952B4AE746 /* Pods-ScavengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScavengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScavengeTests/Pods-ScavengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9515E5123FC54CC7BDA18746 /* libRNMobileCenter.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = archive.ar; name = libRNMobileCenter.a; path = libRNMobileCenter.a; sourceTree = "<group>"; };
+		9515E5123FC54CC7BDA18746 /* libRNMobileCenter.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNMobileCenter.a; sourceTree = "<group>"; };
 		A37ED177E36D45C4B5978F8E /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		A608FE37E0364768AAB1B18B /* libRNCrashes.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCrashes.a; sourceTree = "<group>"; };
 		A77C0DF6FB764E5CB993581E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		AB87AFD660CD4127AA7847A4 /* RNAnalytics.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNAnalytics.xcodeproj; path = "../node_modules/mobile-center-analytics/ios/RNAnalytics.xcodeproj"; sourceTree = "<group>"; };
 		AE45A5F5E2351B9073000CED /* Pods-Scavenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scavenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scavenge/Pods-Scavenge.release.xcconfig"; sourceTree = "<group>"; };
 		AEB08DCF8A43AA72DA4815F4 /* Pods-Scavenge-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scavenge-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scavenge-tvOS/Pods-Scavenge-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		B7148314C8CC4E6DB5FE66C5 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
@@ -317,14 +343,10 @@
 		DF0293056D144B5FB1454DC0 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		DF2A034BEE31423A8AF8A29E /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		E07A74AF559D4E3AABF4866E /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		E10953EB47954805AD272712 /* RNMobileCenter.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNMobileCenter.xcodeproj; path = "../node_modules/mobile-center/ios/RNMobileCenter.xcodeproj"; sourceTree = "<group>"; };
+		E10953EB47954805AD272712 /* RNMobileCenter.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNMobileCenter.xcodeproj; path = "../node_modules/mobile-center/ios/RNMobileCenter.xcodeproj"; sourceTree = "<group>"; };
 		E2D2AEA66A4C40EF81E7ACD5 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		F86849FEF597C23C74BBD03C /* Pods-Scavenge-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scavenge-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scavenge-tvOSTests/Pods-Scavenge-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FCC6456FC126DE0D988881C6 /* libPods-ScavengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScavengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB87AFD660CD4127AA7847A4 /* RNAnalytics.xcodeproj */ = {isa = PBXFileReference; name = "RNAnalytics.xcodeproj"; path = "../node_modules/mobile-center-analytics/ios/RNAnalytics.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		8D37A33F398A4943A86FDC9D /* libRNAnalytics.a */ = {isa = PBXFileReference; name = "libRNAnalytics.a"; path = "libRNAnalytics.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-		822AA8F73AF74897A395D54D /* RNCrashes.xcodeproj */ = {isa = PBXFileReference; name = "RNCrashes.xcodeproj"; path = "../node_modules/mobile-center-crashes/ios/RNCrashes.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		A608FE37E0364768AAB1B18B /* libRNCrashes.a */ = {isa = PBXFileReference; name = "libRNCrashes.a"; path = "libRNCrashes.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +577,7 @@
 				BED53A567DA2448DB6A9969D /* MobileCenter-Config.plist */,
 				DFE543ECA02874BF45F97071 /* Pods */,
 				A2464498060FABD1133B0E12 /* Frameworks */,
+				A9CD63421FE8F0B900A2E5C7 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -597,6 +620,41 @@
 				855BAE27B24B405AA5F2C33D /* Zocial.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		A9CD63421FE8F0B900A2E5C7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				DF0293056D144B5FB1454DC0 /* libRNVectorIcons.a */,
+				9515E5123FC54CC7BDA18746 /* libRNMobileCenter.a */,
+				8D37A33F398A4943A86FDC9D /* libRNAnalytics.a */,
+				A608FE37E0364768AAB1B18B /* libRNCrashes.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		A9CD635F1FE8F0BA00A2E5C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD63631FE8F0BA00A2E5C7 /* libRNMobileCenter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CD63641FE8F0BA00A2E5C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD63681FE8F0BA00A2E5C7 /* libRNAnalytics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9CD63691FE8F0BB00A2E5C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9CD636D1FE8F0BB00A2E5C7 /* libRNCrashes.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A9D6116C1F29B25F005BAE74 /* Products */ = {
@@ -720,11 +778,12 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = NHZ42D6PLK;
+						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = NHZ42D6PLK;
+						ProvisioningStyle = Manual;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -792,6 +851,18 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = A9CD63641FE8F0BA00A2E5C7 /* Products */;
+					ProjectRef = AB87AFD660CD4127AA7847A4 /* RNAnalytics.xcodeproj */;
+				},
+				{
+					ProductGroup = A9CD63691FE8F0BB00A2E5C7 /* Products */;
+					ProjectRef = 822AA8F73AF74897A395D54D /* RNCrashes.xcodeproj */;
+				},
+				{
+					ProductGroup = A9CD635F1FE8F0BA00A2E5C7 /* Products */;
+					ProjectRef = E10953EB47954805AD272712 /* RNMobileCenter.xcodeproj */;
 				},
 				{
 					ProductGroup = A9D6116C1F29B25F005BAE74 /* Products */;
@@ -996,6 +1067,27 @@
 			fileType = archive.ar;
 			path = "libdouble-conversion.a";
 			remoteRef = A9150C1B1F074D9F003B4FE8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9CD63631FE8F0BA00A2E5C7 /* libRNMobileCenter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNMobileCenter.a;
+			remoteRef = A9CD63621FE8F0BA00A2E5C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9CD63681FE8F0BA00A2E5C7 /* libRNAnalytics.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAnalytics.a;
+			remoteRef = A9CD63671FE8F0BA00A2E5C7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A9CD636D1FE8F0BB00A2E5C7 /* libRNCrashes.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCrashes.a;
+			remoteRef = A9CD636C1FE8F0BB00A2E5C7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		A9D6118B1F29B25F005BAE74 /* libRNVectorIcons.a */ = {
@@ -1343,7 +1435,8 @@
 			baseConfigurationReference = 920BA5F483D82F952B4AE746 /* Pods-ScavengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = NHZ42D6PLK;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1370,6 +1463,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scavenge.app/Scavenge";
 			};
 			name = Debug;
@@ -1379,8 +1473,9 @@
 			baseConfigurationReference = 00D9132763919A8DBD2B8008 /* Pods-ScavengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = NHZ42D6PLK;
+				DEVELOPMENT_TEAM = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
@@ -1403,6 +1498,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scavenge.app/Scavenge";
 			};
 			name = Release;
@@ -1412,7 +1508,10 @@
 			baseConfigurationReference = 5EE79BE886F80ED6D9F91364 /* Pods-Scavenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 9;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = NHZ42D6PLK;
 				HEADER_SEARCH_PATHS = (
@@ -1429,7 +1528,10 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.free.food.Scavenge;
 				PRODUCT_NAME = Scavenge;
+				PROVISIONING_PROFILE = "01672701-5fe0-44bd-b6da-5b86d01c3c39";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.free.food.scavenge";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1439,7 +1541,10 @@
 			baseConfigurationReference = AE45A5F5E2351B9073000CED /* Pods-Scavenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = NHZ42D6PLK;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1455,7 +1560,10 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.free.food.Scavenge;
 				PRODUCT_NAME = Scavenge;
+				PROVISIONING_PROFILE = "01672701-5fe0-44bd-b6da-5b86d01c3c39";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.free.food.scavenge";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
